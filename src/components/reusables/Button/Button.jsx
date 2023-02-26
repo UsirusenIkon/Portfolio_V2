@@ -1,17 +1,11 @@
 import './Button.css';
-import PropTypes from 'react';
 
-function Button({ className, text }) {
+function Button({ className, text, onClick }) {
   return (
-    <button type="button" className={`btn ${className}`}>
+    <button type="button" className={`btn ${className}`} onClick={onClick}>
       {text}
     </button>
   );
 }
-
-Button.propTypes = {
-  className: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired,
-};
 
 export default Button;

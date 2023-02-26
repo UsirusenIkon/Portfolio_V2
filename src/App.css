@@ -19,11 +19,6 @@
 
     background-color: var(--primary-dark-color);
   }
-
-  a {
-    color: var(--accent-dark-color);
-    text-decoration: inherit;
-  }
 }
 
 @media (prefers-color-scheme: light) {
@@ -49,17 +44,8 @@
 }
 
 a {
+  color: var(--accent-dark-color);
   text-decoration: inherit;
-}
-
-a:hover {
-  scale: 1.1;
-  transition: all 300ms ease;
-}
-
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
 }
 
 ul {
@@ -71,11 +57,6 @@ ul {
   height: auto;
   border-radius: 10px;
   max-width: 24rem;
-}
-
-a img:hover {
-  scale: 1.1;
-  transition: all 300ms ease;
 }
 
 /* $-Utility classes-$ */
