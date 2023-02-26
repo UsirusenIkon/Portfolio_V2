@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+  /* stylelint-disable-next-line csstree/validator */
+  color-scheme: light dark;
+
+  --primary-dark-color: #575859;
+  --secondary-dark-color: #2c2e2f;
+  --tetiary-dark-color: #353738;
+  --accent-dark-color: #f7f4f3;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-color: #faf0e2;
+    --secondary-color: #f7e6cf;
+    --tetiary-color: #f9ebd9;
+    --accent-color: #302625;
+
+    background-color: var(--primary-dark-color);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --primary-color: #faf0e2;
+    --secondary-color: #f7e6cf;
+    --tetiary-color: #f9ebd9;
+    --accent-color: #302625;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  font-family: 'Lato', sans-serif;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  color: var(--accent-dark-color);
+  text-decoration: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  max-width: 24rem;
+}
+
+/* $-Utility classes-$ */
+.wf {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
