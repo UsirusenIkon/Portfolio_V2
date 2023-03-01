@@ -17,9 +17,6 @@
 
 .about_header {
   border-radius: 50%;
-  /* position: relative;
-  top: -3rem;
-  left: 1rem; */
   gap: 1rem;
   font-size: small;
   align-items: flex-end;
