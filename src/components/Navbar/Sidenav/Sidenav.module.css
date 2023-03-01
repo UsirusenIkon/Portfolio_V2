@@ -1,43 +1,83 @@
 .open {
-  right: -9rem;
-  border-radius: 50%;
-  padding-left: 4rem;
+  right: -6rem;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 45%;
+  padding-left: 3rem;
+  opacity: 0.94;
+  max-height: 35rem;
+  animation: scale-in-right 800ms ease-in-out;
+}
+
+@keyframes scale-in-right {
+  20% {
+    -webkit-transform: translate(1rem);
+    transform: translate(1rem);
+    -webkit-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+  }
 }
 
 .close {
-  right: -19rem;
-  padding-left: 1rem;
+  right: -20rem;
+  padding-left: 0.3rem;
   border-bottom-left-radius: 10%;
   opacity: 0.2;
+  max-height: 27rem;
+  animation: scale-out-right 800ms ease-in-out;
+}
+
+@keyframes scale-out-right {
+  20% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+  }
+
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+    -webkit-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+  }
 }
 
 .hamburger_menu {
   z-index: 700;
   opacity: 0.9;
   border-radius: 5px;
-  position: absolute;
+  position: fixed;
   top: 0.7rem;
   right: 0.5rem;
   font-size: 1rem;
 }
 
 .nav_content {
+  flex-direction: column;
+  z-index: 400;
   position: fixed;
   top: -7rem;
-  height: 35rem;
   width: 22rem;
   padding-top: 13rem;
   gap: 1rem;
-  border-bottom: 2px solid white;
-  border-left: 2px solid white;
   cursor: pointer;
   text-decoration: none;
-  transition: 0.5s ease-in-out;
+  height: 100%;
+  transition: 0.4s ease-in-out;
 }
 
 .nav_list {
   flex-direction: column;
   gap: 1rem;
+  height: max-content;
 }
 
 .nav_item {
@@ -51,10 +91,29 @@
   align-items: center;
 }
 
+.nav_icons {
+  transition: 0.3s ease-in-out;
+}
+
+.see {
+  opacity: 1;
+}
+
+.hide {
+  opacity: 0.1;
+  visibility: hidden;
+}
+
 @media screen and (max-width: 768px) {
   .close {
     opacity: 0;
     visibility: hidden;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hamburger_menu {
+    right: 3rem;
   }
 }
 
@@ -70,6 +129,7 @@
   .nav_content {
     color: var(--accent-dark-color);
     background-color: var(--tetiary-dark-color);
+    filter: drop-shadow(-1px 2px 1px var(--accent-dark-color));
   }
 
   .hm_style {
@@ -96,6 +156,8 @@
   .nav_content {
     color: var(--accent-color);
     background-color: var(--tetiary-color);
+    border-bottom: 2px solid var(--accent-color);
+    border-left: 2px solid var(--accent-color);
   }
 
   .hm_style {

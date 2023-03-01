@@ -1,0 +1,132 @@
+/* stylelint-disable csstree/validator */
+.home_container {
+  padding: 1rem;
+  padding-top: 4rem;
+  margin-bottom: 1rem;
+}
+
+.home_content {
+  padding-top: 6rem;
+  gap: 2rem;
+  z-index: 300;
+  width: 100%;
+  flex-direction: column-reverse;
+  transition: all 0.3ms ease-in-out;
+}
+
+.home_item {
+  display: block;
+}
+
+.img_container {
+  display: none;
+}
+
+.text_content {
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 28rem;
+}
+
+.text {
+  text-shadow: 1px 1px 2px var(--primary-color);
+}
+
+.home_btn {
+  max-width: 13rem;
+}
+
+.home_back_drop {
+  display: none;
+}
+
+.home_back_drop1 {
+  display: block;
+  max-width: 35rem;
+  position: absolute;
+  top: 1rem;
+  right: 0;
+  z-index: -2;
+}
+
+.home_back_drop_img1 {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .home_container {
+    /* padding: 15rem 0 0 2rem; */
+    height: 98vh;
+    align-items: center;
+  }
+
+  .img_container {
+    display: block;
+    max-width: 25rem;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+
+  .img {
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  .text_content {
+    position: relative;
+  }
+
+  .home_content {
+    padding-top: 1rem;
+    flex-direction: row-reverse;
+    max-width: 100rem;
+    margin-left: 5%;
+    align-items: flex-end;
+  }
+
+  .home_back_drop {
+    display: block;
+    max-width: 25rem;
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    z-index: -1;
+  }
+
+  .home_back_drop_img {
+    width: 100%;
+  }
+
+  .home_back_drop1 {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    z-index: -2;
+    max-width: 39rem;
+    left: 4rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .home_container {
+    background-image: linear-gradient(250deg, var(--primary-dark-color), var(--tetiary-dark-color), var(--secondary-dark-color));
+  }
+
+  .img {
+    background-color: var(--secondary-dark-color);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .home_container {
+    background-image: linear-gradient(250deg, var(--primary-color), var(--tetiary-color), var(--secondary-color));
+  }
+
+  .img {
+    background-color: var(--tetiary-dark-color);
+  }
+
+  .home_back_drop_img {
+    filter: invert(19%) sepia(11%) saturate(1743%) hue-rotate(318deg) brightness(67%) contrast(133%);
+  }
+}
