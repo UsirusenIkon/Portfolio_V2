@@ -9,7 +9,7 @@ const navData = [
     id: 0,
     icon: <HomeIcon />,
     text: 'Home',
-    link: '#work',
+    link: '#home',
   },
   {
     id: 1,

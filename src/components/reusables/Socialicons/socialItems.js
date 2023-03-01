@@ -1,8 +1,8 @@
-import twitter from "../../assets/twitter.svg"
-import github from "../../assets/github.svg"
-import angelist from "../../assets/angelist.svg"
-import medium from "../../assets/medium.svg"
-import linkedIn from "../../assets/linkedIn.svg"
+import twitter from "../../../assets/twitter.svg"
+import github from "../../../assets/github.svg"
+import angelist from "../../../assets/angelist.svg"
+import medium from "../../../assets/medium.svg"
+import linkedIn from "../../../assets/linkedIn.svg"
 
 const socialItems = [
   {
