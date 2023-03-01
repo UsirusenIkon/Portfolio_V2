@@ -2,6 +2,7 @@ import { useState } from 'react';
 import navData from '../NavData/NavData';
 import Button from '../../reusables/Button/Button';
 import styles from'./Sidenav.module.css';
+import SocialIcons from '../../Socialicons/SocialIcons';
 
 function Sidenav() {
   const [open, setopen] = useState(false);
@@ -16,7 +17,7 @@ function Sidenav() {
         onClick={onClickHandler}
         text={open ? '</Ik>' : '<Ik>'}
       />
-      <div className={`flex ${styles.nav_content} ${open ? styles.open : styles.close}`}>
+      <div className={`flex ${styles.nav_content} ${open ? styles.open : styles.close }`}>
         <ul className={`flex ${styles.nav_list}`}>
           {navData.map((item) => (
             <li key={item.id} className={`flex ${styles.nav_item}`} to={item.link}>
@@ -25,6 +26,9 @@ function Sidenav() {
             </li>
           ))}
         </ul>
+        <div className={`flex ${styles.nav_icons}  ${open ? styles.see : styles.hide}`}>
+          <SocialIcons />
+        </div>
       </div>
     </div>
   );

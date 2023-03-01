@@ -1,4 +1,3 @@
-import React from 'react';
 import './Navbar.css';
 import '../../App.css';
 import Sidenav from './Sidenav/Sidenav';
