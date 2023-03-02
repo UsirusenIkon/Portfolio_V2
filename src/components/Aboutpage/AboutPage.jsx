@@ -15,16 +15,16 @@ function AboutPage() {
           </div>
           <div>
             <h3>Usirusen Ikon</h3>
-            <p>Frontend developer based in Akwa Ibom, Nigeria</p>
+            <p>Full-stack Software developer based in Akwa Ibom, Nigeria</p>
           </div>
         </div>
         <div>
           <p>
-            My name is Usirusen Ikon. I have acquired and sharpened Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Cursus odio ultricies scelerisque blandit.
-            Ut at vel quam nascetur facilisi aliquam. Magna mauris mi vitae urna donec pellentesque at.
-            Cursus odio ultricies scelerisque blandit. Ut at vel quam nascetur facilisi aliquam.
-            Magna mauris mi vitae urna donec pellentesque at.
+            Hello!, I’m Usirusen, I'm a full-stack web developer student currently enrolled in
+            Microverse, a remote software development school that uses pair-programming and real-world 
+            projects to teach web development. I am enthusiastic about my work and, possess good
+            communication skills, problem-solving ability, and teamwork. I endeavor to make things
+            easily accessible for customers on with my front-end designs.
           </p>
         </div>
         <Button 
