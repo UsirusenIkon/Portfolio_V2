@@ -5,11 +5,13 @@ function SocialIcons() {
   return (
     <ul className={`flex ${styles.icon_container}`}>
       {socialItems.map((item) => (
-        <a href={item.link} key={item.id} className={`flex ${styles.icon_item}`}>
+        <a href={item.link}
+          key={item.id} 
+          className={`flex ${styles.icon_item}`}>
           <img
             className={`${styles.icon_img}`}
             src={item.icon}
-            alt="socialicons"
+            alt={item.name}
           />
         </a>
       ))}
