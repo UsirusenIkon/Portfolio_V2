@@ -4,6 +4,7 @@
   align-items: center;
   padding: 1rem;
   position: relative;
+  margin-bottom: 1rem;
 }
 
 .about_content {
@@ -63,11 +64,11 @@
 
 @media (prefers-color-scheme: light) {
   .about_container {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
   }
 
   .about_content {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
   }
 
   .img_container {
@@ -75,6 +76,6 @@
   }
 
   .img {
-    background-color: var(--tetiary-dark-color);
+    background-color: var(--tetiary-color);
   }
 }

@@ -145,11 +145,6 @@
     background-color: var(--primary-dark-color);
     filter: drop-shadow(2px 2px 1px var(--accent-dark-color));
   }
-
-  .line {
-    background-color: var(--accent-dark-color);
-    border: 1px solid var(--accent-dark-color);
-  }
 }
 
 @media (prefers-color-scheme: light) {
@@ -164,8 +159,7 @@
   .nav_content {
     color: var(--accent-color);
     background-color: var(--tetiary-color);
-    border-bottom: 2px solid var(--accent-color);
-    border-left: 2px solid var(--accent-color);
+    filter: drop-shadow(-1px 2px 1px var(--accent-color));
   }
 
   .hm_style {

@@ -20,7 +20,8 @@
     --secondary-color: #f7e6cf;
     --tetiary-color: #f9ebd9;
     --accent-color: #302625;
-    --tetiary-dark-color: #353738;
+    --filter-ellipse-color: invert(19%) sepia(11%) saturate(1743%) hue-rotate(318deg) brightness(67%) contrast(133%);
+    --filter-icons-color: invert(7%) sepia(5%) saturate(3984%) hue-rotate(318deg) brightness(14%) contrast(80%);
   }
 }
 
@@ -54,7 +55,7 @@ ul {
 }
 
 @media (prefers-color-scheme: dark) {
-  #root {
+  .App {
     background-color: var(--tetiary-dark-color);
     height: 100%;
     color: var(--accent-dark-color);
@@ -62,8 +63,8 @@ ul {
 }
 
 @media (prefers-color-scheme: light) {
-  #root {
-    background-color: var(--primary-color);
+  .App {
+    background-color: var(--tetiary-color);
     height: 100%;
     color: var(--accent-color);
   }

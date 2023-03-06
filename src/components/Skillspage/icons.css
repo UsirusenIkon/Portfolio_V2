@@ -37,12 +37,12 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  .skillspage {
-    background-color: var(--primary-dark-color);
-  }
-
   .icons-backdrop {
     background-color: var(--secondary-dark-color);
+  }
+
+  .backdrop {
+    background-color: var(--primary-dark-color);
   }
 
   .img_container {
@@ -55,12 +55,12 @@
 }
 
 @media (prefers-color-scheme: light) {
-  .skillspage {
-    background-color: var(--primary-dark-color);
-  }
-
   .icons-backdrop {
     background-color: var(--secondary-color);
+  }
+
+  .backdrop {
+    background-color: var(--primary-color);
   }
 
   .img_container {
@@ -68,6 +68,6 @@
   }
 
   .img {
-    background-color: var(--tetiary-dark-color);
+    background-color: var(--tetiary-color);
   }
 }

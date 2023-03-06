@@ -63,28 +63,10 @@
   .header-headline {
     background-color: var(--secondary-dark-color);
   }
-
-  .line {
-    background-color: var(--accent-dark-color);
-    border: 1px solid var(--accent-dark-color);
-  }
-
-  .hamburger-menu {
-    border: 1px solid var(--accent-dark-color);
-  }
 }
 
 @media (prefers-color-scheme: light) {
   .header-headline {
     background-color: var(--secondary-color);
-  }
-
-  .line {
-    background-color: var(--secondary-color);
-  }
-
-  .hamburger-menu {
-    background-color: var(--accent-color);
-    border: 1px solid var(--secondary-color);
   }
 }
