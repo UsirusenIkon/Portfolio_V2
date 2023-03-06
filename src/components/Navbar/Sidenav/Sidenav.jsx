@@ -20,9 +20,16 @@ function Sidenav() {
       <div className={`flex ${styles.nav_content} ${open ? styles.open : styles.close }`}>
         <ul className={`flex ${styles.nav_list}`}>
           {navData.map((item) => (
-            <a key={item.id} className={`flex ${styles.nav_item}`} href={item.link}>
+            <a key={item.id}
+            className={`flex ${styles.nav_item}  ${open ? styles.side_open : styles.side_close }`} 
+            href={item.link}
+            >
               <span>{item.icon}</span>
-              <span className={`flex ${styles.nav_text}`}>{item.text}</span>
+              <span
+              onClick={onClickHandler}
+              className={`flex ${styles.nav_text}`}
+              >
+                {item.text}</span>
             </a>
           ))}
         </ul>

@@ -24,13 +24,14 @@
 .logo-img {
   opacity: 0.5;
   position: absolute;
-  width: 4rem;
+  width: 3rem;
   border-radius: 5px;
 }
 
 .logo-text {
   z-index: 600;
   font-style: normal;
+  font-size: small;
   filter: drop-shadow(1px 1px 1px var(--accent-color));
 }
 

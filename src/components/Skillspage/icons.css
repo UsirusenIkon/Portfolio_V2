@@ -1,0 +1,73 @@
+.icons-backdrop {
+  border-radius: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+  gap: 1.3rem;
+  width: 100%;
+  max-width: 20rem;
+}
+
+.icons-container {
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 1rem;
+}
+
+.icon-container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
+}
+
+.backdrop {
+  padding: 0.7rem;
+  align-items: center;
+  max-width: 3.3rem;
+  border-radius: 35%;
+  background-color: var(--primary-dark-color);
+}
+
+.icon {
+  width: 100%;
+}
+
+@media (prefers-color-scheme: dark) {
+  .skillspage {
+    background-color: var(--primary-dark-color);
+  }
+
+  .icons-backdrop {
+    background-color: var(--secondary-dark-color);
+  }
+
+  .img_container {
+    border: 2px solid var(--secondary-dark-color);
+  }
+
+  .img {
+    background-color: var(--tetiary-dark-color);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .skillspage {
+    background-color: var(--primary-dark-color);
+  }
+
+  .icons-backdrop {
+    background-color: var(--secondary-color);
+  }
+
+  .img_container {
+    border: 2px solid var(--secondary-color);
+  }
+
+  .img {
+    background-color: var(--tetiary-dark-color);
+  }
+}

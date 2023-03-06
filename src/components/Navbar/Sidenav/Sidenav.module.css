@@ -1,12 +1,16 @@
 .open {
   right: -6rem;
-  border-top-left-radius: 50%;
-  border-bottom-left-radius: 50%;
-  border-bottom-right-radius: 45%;
+  border-bottom-left-radius: 1rem;
   padding-left: 3rem;
-  opacity: 0.94;
+  opacity: 0.9;
   max-height: 35rem;
   animation: scale-in-right 800ms ease-in-out;
+  backdrop-filter: grayscale(0.8) blur(10px);
+}
+
+.side_open {
+  right: -6rem;
+  opacity: 0.94;
 }
 
 @keyframes scale-in-right {
@@ -34,6 +38,11 @@
   animation: scale-out-right 800ms ease-in-out;
 }
 
+.side_close {
+  right: -20rem;
+  opacity: 0.2;
+}
+
 @keyframes scale-out-right {
   20% {
     -webkit-transform: scale(1);
@@ -55,9 +64,8 @@
   opacity: 0.9;
   border-radius: 5px;
   position: fixed;
-  top: 0.7rem;
+  top: 0.55rem;
   right: 0.5rem;
-  font-size: 1rem;
 }
 
 .nav_content {
