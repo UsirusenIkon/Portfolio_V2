@@ -19,15 +19,15 @@ const navData = [
   },
   {
     id: 2,
-    icon: <AutoStoriesIcon />,
-    text: 'Projects',
-    link: '#projects',
-  },
-  {
-    id: 3,
     icon: <BuildIcon />,
     text: 'Skills',
     link: '#skills',
+  },
+  {
+    id: 3,
+    icon: <AutoStoriesIcon />,
+    text: 'Projects',
+    link: '#projects',
   },
   {
     id: 4,

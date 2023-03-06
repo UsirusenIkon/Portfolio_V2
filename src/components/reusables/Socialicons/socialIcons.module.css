@@ -4,7 +4,7 @@
 }
 
 .icon_item {
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   border-radius: 50%;
   padding: 4px;
@@ -15,11 +15,7 @@
 }
 
 @media (prefers-color-scheme: light) {
-  .icon_item {
-    background-color: var(--accent-color);
-  }
-
   .icon_img {
-    filter: invert(7%) sepia(5%) saturate(3984%) hue-rotate(318deg) brightness(104%) contrast(80%);
+    filter: invert(7%) sepia(5%) saturate(3984%) hue-rotate(318deg) brightness(14%) contrast(80%);
   }
 }

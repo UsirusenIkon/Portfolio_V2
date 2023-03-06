@@ -8,7 +8,7 @@ import SocialIcons from "../reusables/Socialicons/SocialIcons";
 
 function HomePage() {
   return(
-    <div id="home" className={`flex ${styles.home_container}`}>
+    <div id="home" className={`flex snap ${styles.home_container}`}>
       <div className={`flex ${styles.home_content}`}>
         <div className={`${styles.img_container}`}>
           <img src={Ikon} alt="Usirusen Ikon" 
