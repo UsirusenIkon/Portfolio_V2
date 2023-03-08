@@ -3,6 +3,7 @@
   padding: 1rem;
   padding-top: 4rem;
   margin-bottom: 1rem;
+  background-image: linear-gradient(250deg, var(--primary-color), var(--tetiary-color), var(--secondary-color));
 }
 
 .home_content {
@@ -70,6 +71,7 @@
   .img {
     width: 100%;
     border-radius: 50%;
+    background-color: var(--secondary-color);
   }
 
   .text_content {
@@ -95,6 +97,7 @@
 
   .home_back_drop_img {
     width: 100%;
+    filter: var(--filter-ellipse-color);
   }
 
   .home_back_drop1 {
@@ -104,29 +107,5 @@
     z-index: -2;
     max-width: 39rem;
     left: 4rem;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .home_container {
-    background-image: linear-gradient(250deg, var(--primary-dark-color), var(--tetiary-dark-color), var(--secondary-dark-color));
-  }
-
-  .img {
-    background-color: var(--secondary-dark-color);
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  .home_container {
-    background-image: linear-gradient(250deg, var(--primary-color), var(--tetiary-color), var(--secondary-color));
-  }
-
-  .img {
-    background-color: var(--tetiary-dark-color);
-  }
-
-  .home_back_drop_img {
-    filter: invert(19%) sepia(11%) saturate(1743%) hue-rotate(318deg) brightness(67%) contrast(133%);
   }
 }

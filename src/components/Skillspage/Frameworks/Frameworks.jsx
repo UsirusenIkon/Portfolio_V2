@@ -3,7 +3,7 @@ import "../icons.css"
 
 function Frameworks() {
   return (
-    <ul className="flex icons-backdrop">
+    <ul className="flex animate icons-backdrop">
       <h3>Frameworks</h3>
       <div className="flex icons-container">
         {libraries.map((l) => (

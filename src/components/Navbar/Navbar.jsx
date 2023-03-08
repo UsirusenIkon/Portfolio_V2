@@ -4,7 +4,7 @@ import Sidenav from './Sidenav/Sidenav';
 
 function Navbar() {
   return (
-    <div className="header flex">
+    <div className="header flex animate">
       <div className="header-headline flex">
         <a href="#home" className="logo flex">
             <i className="logo-text">Ikon`s</i>

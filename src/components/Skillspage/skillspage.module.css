@@ -6,6 +6,7 @@
   padding: 1rem;
   padding-top: 9rem;
   margin-top: 1rem;
+  background-color: var(--primary-color);
 }
 
 .components {
@@ -17,42 +18,6 @@
 
 @media screen and (min-width: 768px) {
   .skillspage {
-    height: 95vh;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .skillspage {
-    background-color: var(--primary-dark-color);
-  }
-
-  .about_content {
-    background-color: var(--secondary-dark-color);
-  }
-
-  .img_container {
-    border: 2px solid var(--secondary-dark-color);
-  }
-
-  .img {
-    background-color: var(--tetiary-dark-color);
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  .about_container {
-    background-color: var(--secondary-color);
-  }
-
-  .about_content {
-    background-color: var(--primary-color);
-  }
-
-  .img_container {
-    border: 2px solid var(--secondary-color);
-  }
-
-  .img {
-    background-color: var(--tetiary-dark-color);
+    height: 40rem;
   }
 }

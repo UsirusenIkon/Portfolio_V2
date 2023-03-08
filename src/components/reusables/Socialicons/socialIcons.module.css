@@ -12,10 +12,5 @@
 
 .icon_img {
   width: 1.5rem;
-}
-
-@media (prefers-color-scheme: light) {
-  .icon_img {
-    filter: invert(7%) sepia(5%) saturate(3984%) hue-rotate(318deg) brightness(14%) contrast(80%);
-  }
+  filter: var(--filter-icons-color);
 }
