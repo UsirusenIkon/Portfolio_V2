@@ -8,9 +8,9 @@ import SocialIcons from "../reusables/Socialicons/SocialIcons";
 
 function HomePage() {
   return(
-    <div id="home" className={`flex snap ${styles.home_container}`}>
-      <div className={`flex ${styles.home_content}`}>
-        <div className={`${styles.img_container}`}>
+    <div id="home" className={`flex  ${styles.home_container}`}>
+      <div className={`flex animate ${styles.home_content}`}>
+        <div className={`animate ${styles.img_container}`}>
           <img src={Ikon} alt="Usirusen Ikon" 
           className={`${styles.img}`}
           />
@@ -32,13 +32,13 @@ function HomePage() {
         </div>
 
         <div className={`${styles.home_back_drop}`}>
-          <img className={`${styles.home_back_drop_img}`} src={ellipse} alt="ellipse" />
+          <img className={`animate ${styles.home_back_drop_img}`} src={ellipse} alt="ellipse" />
         </div>
         <div className={`${styles.home_back_drop1}`}>
-          <img className={`${styles.home_back_drop_img1}`} src={frame} alt="frame" />
+          <img className={`animate ${styles.home_back_drop_img1}`} src={frame} alt="frame" />
         </div>
         <div className={`${styles.home_back_drop1}`}>
-          <img className={`${styles.home_back_drop_img1}`} src={frame1} alt="frame" />
+          <img className={`animate ${styles.home_back_drop_img1}`} src={frame1} alt="frame" />
         </div>
       </div>
     </div>

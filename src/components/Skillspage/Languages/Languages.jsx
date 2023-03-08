@@ -3,7 +3,7 @@ import "../icons.css"
 
 function Languages() {
   return (
-    <ul className="flex icons-backdrop">
+    <ul className="flex animate icons-backdrop">
       <h3>Languages</h3>
       <div className="flex icons-container">
         {languageArr.map((l) => (

@@ -6,7 +6,7 @@ import SkillsPage from './components/Skillspage/SkillsPage';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App animate">
       <Navbar />
       <HomePage />
       <AboutPage />

@@ -2,18 +2,6 @@
   padding: 0.5em;
   transition: all 0.4s ease-in-out;
   border-radius: 5px;
-}
-
-@media (prefers-color-scheme: dark) {
-  .btn {
-    background-color: var(--accent-dark-color);
-    color: var(--primary-dark-color);
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  .btn {
-    background-color: var(--accent-color);
-    color: var(--primary-color);
-  }
+  background-color: var(--accent-color);
+  color: var(--primary-color);
 }

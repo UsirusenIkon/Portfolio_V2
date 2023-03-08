@@ -5,6 +5,7 @@
   padding: 1rem;
   position: relative;
   margin-bottom: 1rem;
+  background-color: var(--primary-color);
 }
 
 .about_content {
@@ -14,6 +15,7 @@
   max-width: 40rem;
   padding: 1rem;
   gap: 2rem;
+  background-color: var(--secondary-color);
 }
 
 .about_header {
@@ -27,11 +29,13 @@
   align-items: center;
   max-width: 6.5rem;
   border-radius: 50%;
+  border: 2px solid var(--secondary-color);
 }
 
 .img {
   width: 100%;
   border-radius: 50%;
+  background-color: var(--tetiary-color);
 }
 
 .cv_btn {
@@ -41,41 +45,5 @@
 @media screen and (min-width: 768px) {
   .about_container {
     height: 95vh;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .about_container {
-    background-color: var(--primary-dark-color);
-  }
-
-  .about_content {
-    background-color: var(--secondary-dark-color);
-  }
-
-  .img_container {
-    border: 2px solid var(--secondary-dark-color);
-  }
-
-  .img {
-    background-color: var(--tetiary-dark-color);
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  .about_container {
-    background-color: var(--primary-color);
-  }
-
-  .about_content {
-    background-color: var(--secondary-color);
-  }
-
-  .img_container {
-    border: 2px solid var(--secondary-color);
-  }
-
-  .img {
-    background-color: var(--tetiary-color);
   }
 }

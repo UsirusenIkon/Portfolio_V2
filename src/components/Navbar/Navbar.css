@@ -10,6 +10,7 @@
   width: 100%;
   align-items: center;
   padding: 1em;
+  background-color: var(--secondary-color);
 }
 
 .logo {
@@ -36,7 +37,7 @@
 }
 
 .logo:hover {
-  filter: drop-shadow(2px 2px 2px  var(--accent-dark-color));
+  filter: drop-shadow(2px 2px 2px  var(--accent-color));
   color: var(--accent-color);
 }
 
@@ -56,17 +57,5 @@
 @media screen and (min-width: 768px) {
   .logo {
     left: 2.4rem;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .header-headline {
-    background-color: var(--secondary-dark-color);
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  .header-headline {
-    background-color: var(--secondary-color);
   }
 }

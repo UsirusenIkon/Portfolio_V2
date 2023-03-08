@@ -6,6 +6,7 @@
   padding: 1rem;
   padding-top: 9rem;
   margin-top: 1rem;
+  background-color: var(--primary-color);
 }
 
 .components {
@@ -18,17 +19,5 @@
 @media screen and (min-width: 768px) {
   .skillspage {
     height: 40rem;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .skillspage {
-    background-color: var(--primary-dark-color);
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  .skillspage {
-    background-color: var(--primary-color);
   }
 }

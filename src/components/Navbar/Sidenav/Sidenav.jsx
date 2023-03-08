@@ -3,6 +3,8 @@ import navData from '../NavData/NavData';
 import Button from '../../reusables/Button/Button';
 import styles from'./Sidenav.module.css';
 import SocialIcons from '../../reusables/Socialicons/SocialIcons';
+import { WbSunny, DarkMode } from '@mui/icons-material';
+import useTheme from '../../../hooks/useTheme';
 
 function Sidenav() {
   const [open, setopen] = useState(false);
@@ -10,8 +12,10 @@ function Sidenav() {
     setopen(!open);
   };
 
+  const [theme, setTheme] = useTheme();
+
   return (
-    <div>
+    <div className={`animate ${styles.Sidenav}`}>
       <Button
         className={`${styles.hamburger_menu}  ${open ? styles.hm_style : ''}`}
         onClick={onClickHandler}
@@ -33,6 +37,13 @@ function Sidenav() {
             </a>
           ))}
         </ul>
+        <div className={`flex ${styles.theme}  ${open ? styles.theme_open : styles.theme_close }`}>
+          {theme === 'dark' ? 
+            <WbSunny onClick={() => setTheme('light')} /> :
+            <DarkMode onClick={() => setTheme('dark')} />
+          }
+        </div>
+
         <div className={`flex ${styles.nav_icons}  ${open ? styles.see : styles.hide}`}>
           <SocialIcons />
         </div>
