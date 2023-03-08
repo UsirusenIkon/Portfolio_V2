@@ -1,10 +1,13 @@
 import { useState } from 'react';
+import useTheme from '../../../hooks/useTheme';
 import navData from '../NavData/NavData';
 import Button from '../../reusables/Button/Button';
 import styles from'./Sidenav.module.css';
 import SocialIcons from '../../reusables/Socialicons/SocialIcons';
 import { WbSunny, DarkMode } from '@mui/icons-material';
-import useTheme from '../../../hooks/useTheme';
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
+import MenuOpenIcon from '@mui/icons-material/MenuOpen';
 
 function Sidenav() {
   const [open, setopen] = useState(false);
@@ -19,7 +22,8 @@ function Sidenav() {
       <Button
         className={`${styles.hamburger_menu}  ${open ? styles.hm_style : ''}`}
         onClick={onClickHandler}
-        text={open ? '</Ik>' : '<Ik>'}
+        // text={open ? '' : ''}
+        Icon={open ? <CloseIcon /> : <MenuIcon />}
       />
       <div className={`flex ${styles.nav_content} ${open ? styles.open : styles.close }`}>
         <ul className={`flex ${styles.nav_list}`}>
