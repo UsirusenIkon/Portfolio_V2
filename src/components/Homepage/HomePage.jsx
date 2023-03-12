@@ -24,22 +24,23 @@ function HomePage() {
             I’m Usirusen Ikon, a Software Developer based in Nigeria. 
             I create functional and  user-friendly websites that meets the needs of users.
           </p>
-          <SocialIcons />
+          <SocialIcons 
+            className={`${styles.home_icons}`}
+          />
           <Button 
             className={`${styles.home_btn}`}
             text='Let’s Connect'
             />
         </div>
-
-        <div className={`${styles.home_back_drop}`}>
-          <img className={`animate ${styles.home_back_drop_img}`} src={ellipse} alt="ellipse" />
-        </div>
-        <div className={`${styles.home_back_drop1}`}>
-          <img className={`animate ${styles.home_back_drop_img1}`} src={frame} alt="frame" />
-        </div>
-        <div className={`${styles.home_back_drop1}`}>
-          <img className={`animate ${styles.home_back_drop_img1}`} src={frame1} alt="frame" />
-        </div>
+      </div>
+      <div className={`${styles.home_back_drop1}`}>
+        <img className={`animate ${styles.home_back_drop_img1}`} src={frame} alt="frame" />
+      </div>
+      <div className={`${styles.home_back_drop1}`}>
+        <img className={`animate ${styles.home_back_drop_img1}`} src={frame1} alt="frame" />
+      </div>
+      <div className={`${styles.home_back_drop}`}>
+        <img className={`animate ${styles.home_back_drop_img}`} src={ellipse} alt="ellipse" />
       </div>
     </div>
   )

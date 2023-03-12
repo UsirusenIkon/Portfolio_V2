@@ -6,11 +6,11 @@
   right: -6rem;
   border-bottom-left-radius: 1rem;
   padding-left: 2rem;
-  opacity: 0.9;
-  max-height: 35rem;
+  max-height: 25rem;
   animation: scale-in-right 800ms ease-in-out;
   backdrop-filter: grayscale(0.8) blur(10px);
   background-color: var(--secondary-color);
+  filter: drop-shadow(-1px 1px 1px var(--accent-color));
 }
 
 .side_open {
@@ -38,15 +38,14 @@
   right: -20rem;
   padding-left: 0.3rem;
   border-bottom-left-radius: 10%;
-  opacity: 0.2;
-  max-height: 27rem;
+  max-height: 10rem;
   animation: scale-out-right 800ms ease-in-out;
-  background-color: var(--secondary-color);
+  /* background-color: var(--secondary-color); */
 }
 
 .side_close {
   right: -20rem;
-  opacity: 0.2;
+
 }
 
 @keyframes scale-out-right {
@@ -67,11 +66,12 @@
 
 .hamburger_menu {
   z-index: 700;
-  opacity: 0.9;
   border-radius: 5px;
   position: fixed;
   top: 0.55rem;
   right: 0.5rem;
+  width: unset;
+  height: unset;
   padding: 2px 6px;
 }
 
@@ -79,23 +79,20 @@
   flex-direction: column;
   z-index: 400;
   position: fixed;
-  top: -7rem;
+  top: 0;
   width: 22rem;
-  padding-top: 14rem;
+  padding-top: 7rem;
   gap: 1rem;
   cursor: pointer;
   text-decoration: none;
   height: 100%;
   transition: 0.4s ease-in-out;
   color: var(--accent-color);
-  background-color: var(--tetiary-color);
-  filter: drop-shadow(-1px 2px 1px var(--accent-color));
 }
 
 .nav_list {
   flex-direction: column;
   gap: 1rem;
-  height: max-content;
 }
 
 .nav_item {
@@ -130,7 +127,7 @@
 
 .theme {
   position: absolute;
-  top: 11.5rem;
+  top: 4.5rem;
   transition: 0.3s ease-in-out;
 }
 
@@ -140,10 +137,17 @@
 
 .theme_close {
   left: 0.2rem;
+  color: var(--filter-navicons-color);
 }
 
-.theme_icon {
-  width: 1rem;
+.theme_icons {
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 0.5rem;
+}
+
+.icon_close {
+  color: var(--filter-navicons-color);
 }
 
 @media screen and (max-width: 768px) {
@@ -158,3 +162,5 @@
     right: 3rem;
   }
 }
+
+@media screen and (orientation: landscape) {}

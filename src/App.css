@@ -9,6 +9,7 @@
   --accent-color: #302625;
   --filter-ellipse-color: invert(19%) sepia(11%) saturate(1743%) hue-rotate(318deg) brightness(67%) contrast(133%);
   --filter-icons-color: invert(7%) sepia(5%) saturate(3984%) hue-rotate(318deg) brightness(14%) contrast(80%);
+  --filter-navicons-color: #392424;;
 }
 
 body.dark {
@@ -18,6 +19,7 @@ body.dark {
   --accent-color: #f7f4f3;
   --filter-ellipse-color: none;
   --filter-icons-color: none;
+  --filter-navicons-color: #303030;
 }
 
 * {

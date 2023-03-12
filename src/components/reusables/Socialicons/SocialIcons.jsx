@@ -1,7 +1,7 @@
 import socialItems from './socialItems';
 import styles from './socialIcons.module.css';
 
-function SocialIcons() {
+function SocialIcons({className}) {
   return (
     <ul className={`flex animate ${styles.icon_container}`}>
       {socialItems.map((item) => (
@@ -9,7 +9,7 @@ function SocialIcons() {
           key={item.id} 
           className={`flex ${styles.icon_item}`}>
           <img
-            className={`animate ${styles.icon_img}`}
+            className={`animate  ${className} ${styles.icon_img}`}
             src={item.icon}
             alt={item.name}
           />
