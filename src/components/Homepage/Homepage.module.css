@@ -13,7 +13,10 @@
   width: 100%;
   flex-direction: column-reverse;
   transition: all 0.3ms ease-in-out;
-  font-size: clamp(1px, 7vw, 20px);
+}
+
+h1 {
+  font-size: clamp(2rem, 7vw, 3.3rem);
 }
 
 .home_item {
@@ -27,8 +30,12 @@
 .text_content {
   flex-direction: column;
   gap: 1rem;
-  max-width: 28rem;
   text-shadow: 1px 2px 1px var(--primary-color);
+  font-size: clamp(11px, 7vw, 1.5rem);
+}
+
+.text {
+  max-width: 28rem;
 }
 
 .home_back_drop {
@@ -47,37 +54,9 @@
 }
 
 /* Ipad Mini portrait */
-@media screen and (width: 768px) and (height: 1024px) {
-  .home_container {
-    align-items: center;
-  }
-}
-
-/* Ipad Mini landscape */
-@media screen and (width: 1024px) and (height: 768px) {
-  .home_container {
-    align-items: center;
-  }
-}
-
-/* Ipad Air portrait */
-@media screen and (width: 820px) and (height: 1180px) {
-  .home_container {
-    align-items: center;
-  }
-}
-
-/* Ipad Air landscape */
-@media screen and (height: 820px) and (width: 1180px) {
-  .home_container {
-    align-items: center;
-  }
-}
-
-/* Surface Pro 7 portrait */
-@media screen and (width: 912px) and (height: 1368px) {
-  .home_container {
-    align-items: center;
+@media screen and (min-width: 768px) and (max-width: 853px) {
+  .text_content {
+    width: 25rem;
   }
 }
 
@@ -123,7 +102,6 @@
 
   .img_container {
     display: block;
-    /* max-width: 25rem; */
     border-radius: 50%;
     overflow: hidden;
     margin: 0 auto;

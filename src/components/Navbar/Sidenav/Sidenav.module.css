@@ -40,12 +40,10 @@
   border-bottom-left-radius: 10%;
   max-height: 10rem;
   animation: scale-out-right 800ms ease-in-out;
-  /* background-color: var(--secondary-color); */
 }
 
 .side_close {
   right: -20rem;
-
 }
 
 @keyframes scale-out-right {
@@ -155,6 +153,10 @@
     opacity: 0;
     visibility: hidden;
   }
+
+  .open {
+    overflow: scroll;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -162,5 +164,3 @@
     right: 3rem;
   }
 }
-
-@media screen and (orientation: landscape) {}
