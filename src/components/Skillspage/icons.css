@@ -1,7 +1,7 @@
 .icons-backdrop {
   border-radius: 1rem;
-  justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
   padding: 1rem;
   gap: 1.3rem;
   width: 100%;
@@ -28,7 +28,7 @@
 .backdrop {
   padding: 0.7rem;
   align-items: center;
-  max-width: 3.3rem;
+  max-width: 3rem;
   border-radius: 35%;
   background-color: var(--primary-color);
 }

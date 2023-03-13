@@ -18,6 +18,6 @@
 
 @media screen and (min-width: 768px) {
   .skillspage {
-    height: 40rem;
+    height: 100vh;
   }
 }

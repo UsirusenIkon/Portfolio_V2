@@ -20,7 +20,7 @@ function AboutPage() {
         </div>
         <div>
           <p className={`${styles.bio_content}`}>
-            Hello!, I’m Usirusen, I'm a full-stack web developer student currently enrolled in
+            Hello! I’m Usirusen, I'm a full-stack web developer student currently enrolled in
             Microverse, a remote software development school that uses pair-programming and real-world 
             projects to teach web development. I am enthusiastic about my work and, possess good
             communication skills, problem-solving ability, and teamwork. I endeavor to make things
@@ -28,7 +28,7 @@ function AboutPage() {
           </p>
         </div>
         <Button 
-          text="Download CV"
+          text="Get My Resume"
           className={`${styles.cv_btn}`}
         />
       </div>

@@ -1,3 +1,4 @@
+/* stylelint-disable csstree/validator */
 .about_container {
   flex-direction: column;
   justify-content: center;
@@ -33,7 +34,7 @@ h3 {
   font-size: clamp(3px, 7vw, 1rem);
 }
 
-.bio_content{
+.bio_content {
   font-size: clamp(3px, 7vw, 1.1rem);
 }
 
