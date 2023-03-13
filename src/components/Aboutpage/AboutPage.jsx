@@ -15,11 +15,11 @@ function AboutPage() {
           </div>
           <div>
             <h3>Usirusen Ikon</h3>
-            <p>Full-stack Software developer based in Akwa Ibom, Nigeria</p>
+            <p className={`${styles.bio}`}>Full-stack Software developer based in Akwa Ibom, Nigeria</p>
           </div>
         </div>
         <div>
-          <p>
+          <p className={`${styles.bio_content}`}>
             Hello!, I’m Usirusen, I'm a full-stack web developer student currently enrolled in
             Microverse, a remote software development school that uses pair-programming and real-world 
             projects to teach web development. I am enthusiastic about my work and, possess good
