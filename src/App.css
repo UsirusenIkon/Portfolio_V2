@@ -31,6 +31,27 @@ body.dark {
   scroll-behavior: smooth;
 }
 
+/* $-width-$ */
+html::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* $-Track-$ */
+html::-webkit-scrollbar-track {
+  background-color: var(--secondary-color);
+}
+
+/* $-Handle-$ */
+html::-webkit-scrollbar-thumb {
+  background-color: var(--accent-color);
+  border-radius: 8px;
+}
+
+/* $-Handle on hover-$ */
+html::-webkit-scrollbar-thumb:hover {
+  background-color: var(--accent-color);
+}
+
 a {
   color: var(--accent-color);
   text-decoration: inherit;
