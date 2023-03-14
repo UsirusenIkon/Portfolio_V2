@@ -4,8 +4,8 @@ import styles from "./aboutpage.module.css"
 
 function AboutPage() {
   return(
-    <div id="about" className={`flex animate ${styles.about_container}`}>
-      <h2 className={`heading`}>About me</h2>
+    <div id="about" className={`flex ${styles.about_container}`}>
+      <h2 className={`heading`}>About me <br/><small>Bio</small></h2>
       <div className={`flex animate ${styles.about_content}`}>
         <div className={`flex ${styles.about_header}`}>
           <div className={`flex ${styles.img_container}`}>
