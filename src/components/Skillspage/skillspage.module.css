@@ -1,16 +1,14 @@
 .skillspage {
-  position: relative;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   padding: 1rem;
-  padding-top: 9rem;
-  margin-top: 1rem;
+  margin-bottom: 1rem;
   background-color: var(--primary-color);
 }
 
 .components {
   justify-content: center;
+  align-items: center;
   width: 100%;
   flex-wrap: wrap;
   gap: 1rem;

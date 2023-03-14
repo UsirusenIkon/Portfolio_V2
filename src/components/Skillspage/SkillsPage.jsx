@@ -5,7 +5,7 @@ import styles from "./skillspage.module.css";
 
 function SkillsPage() {
   return (
-    <div id="skills" className={`flex animate ${styles.skillspage}`}>
+    <div id="skills" className={` ${styles.skillspage}`}>
       <h2 className='heading'>Skills<br />
         <small>Full-stack Developer</small>
       </h2>
