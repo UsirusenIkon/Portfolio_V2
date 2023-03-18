@@ -1,9 +1,10 @@
 .skillspage {
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 1rem;
   margin-bottom: 1rem;
-  background-color: var(--primary-color);
+  background-color: var(--tetiary-color);
 }
 
 .components {

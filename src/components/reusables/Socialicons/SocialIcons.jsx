@@ -9,7 +9,7 @@ function SocialIcons({className}) {
           key={item.id} 
           className={`flex ${styles.icon_item}`}>
           <img
-            className={`animate  ${className} ${styles.icon_img}`}
+            className={`animate ${className} ${styles.icon_img}`}
             src={item.icon}
             alt={item.name}
           />

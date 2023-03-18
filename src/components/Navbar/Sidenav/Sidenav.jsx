@@ -53,7 +53,7 @@ function Sidenav() {
             </a>
           ))}
           <div
-            className={`flex ${styles.nav_icons}  ${
+            className={`flex ${styles.nav_icons} ${
               open ? styles.see : styles.hide
             }`}
           >

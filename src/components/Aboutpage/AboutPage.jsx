@@ -1,3 +1,4 @@
+import InfoIcon from '@mui/icons-material/Info';
 import Button from "../reusables/Button/Button";
 import Ikon from "../../assets/ikon.svg"
 import styles from "./aboutpage.module.css"
@@ -5,7 +6,12 @@ import styles from "./aboutpage.module.css"
 function AboutPage() {
   return(
     <div id="about" className={`flex ${styles.about_container}`}>
-      <h2 className={`heading`}>About me <br/><small>Bio</small></h2>
+      <div className={`heading`}>
+        <h2 className='flex head'>
+          <InfoIcon />About me
+        </h2>
+        <p><b>Bio</b></p>
+      </div>
       <div className={`flex animate ${styles.about_content}`}>
         <div className={`flex ${styles.about_header}`}>
           <div className={`flex ${styles.img_container}`}>
