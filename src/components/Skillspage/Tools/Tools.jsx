@@ -3,7 +3,7 @@ import "../icons.css"
 
 function Tools() {
   return (
-    <ul className="flex animate icons-backdrop">
+    <ul className="flex animate box_shadow icons-backdrop">
       <h3>Tools</h3>
       <div className="flex icons-container">
         {toolKit.map((tool) => (

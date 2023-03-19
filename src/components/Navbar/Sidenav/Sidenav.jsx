@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import useTheme from '../../../hooks/useTheme';
-import navData from '../NavData/NavData';
-import Button from '../../reusables/Button/Button';
+import navData from '../../../data/NavData';
+import Button from '../../../reusables/Button/Button';
 import styles from './Sidenav.module.css';
-import SocialIcons from '../../reusables/Socialicons/SocialIcons';
+import SocialIcons from '../../../reusables/Socialicons/SocialIcons';
 import { WbSunny, DarkMode } from '@mui/icons-material';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';

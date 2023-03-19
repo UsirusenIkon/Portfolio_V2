@@ -1,18 +1,19 @@
 import InfoIcon from '@mui/icons-material/Info';
-import Button from "../reusables/Button/Button";
+import Button from "../../reusables/Button/Button";
 import Ikon from "../../assets/ikon.svg"
 import styles from "./aboutpage.module.css"
+import Container from '../../reusables/Container/Container';
 
 function AboutPage() {
   return(
-    <div id="about" className={`flex ${styles.about_container}`}>
+    <Container id="about" className={`flex ${styles.about_container}`}>
       <div className={`heading`}>
         <h2 className='flex head'>
           <InfoIcon />About me
         </h2>
         <p><b>Bio</b></p>
       </div>
-      <div className={`flex animate ${styles.about_content}`}>
+      <div className={`flex animate box_shadow  ${styles.about_content}`}>
         <div className={`flex ${styles.about_header}`}>
           <div className={`flex ${styles.img_container}`}>
             <img src={Ikon} alt="Usirusen Ikon" 
@@ -38,7 +39,7 @@ function AboutPage() {
           className={`${styles.cv_btn}`}
         />
       </div>
-    </div>
+    </Container>
   )
 }
 

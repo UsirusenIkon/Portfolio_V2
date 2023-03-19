@@ -1,22 +1,7 @@
-.skillspage {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  background-color: var(--tetiary-color);
-}
-
 .components {
   justify-content: center;
   align-items: center;
   width: 100%;
   flex-wrap: wrap;
   gap: 1rem;
-}
-
-@media screen and (min-width: 768px) {
-  .skillspage {
-    height: 100vh;
-  }
 }

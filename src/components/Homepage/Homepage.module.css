@@ -1,9 +1,6 @@
 /* stylelint-disable csstree/validator */
 .home_container {
-  padding: 1rem;
-  padding-top: 4rem;
-  margin-bottom: 1rem;
-  background-image: linear-gradient(250deg, var(--primary-color), var(--tetiary-color), var(--secondary-color));
+  background-image: linear-gradient(250deg, var(--tetiary-color), var(--secondary-color));
 }
 
 .home_content {
@@ -53,51 +50,9 @@ h1 {
   width: 100%;
 }
 
-/* Ipad Mini portrait */
-@media screen and (min-width: 768px) and (max-width: 853px) {
-  .text_content {
-    width: 25rem;
-  }
-}
-
-/* Surface Pro 7 landscape */
-@media only screen and (width: 1368px) and (height: 912px) {
-  .home_container {
-    align-items: center;
-  }
-
-  .text_content {
-    font-size: 2rem;
-    max-width: 40rem;
-  }
-
-  .img_container {
-    height: 30rem;
-    width: 30rem;
-  }
-
-  .home_btn {
-    height: 5rem;
-    width: 14rem;
-    font-size: 1.6rem;
-  }
-
-  .home_icons {
-    width: 2rem;
-  }
-}
-
-@media screen and (width: 878px) and (height: 1180px) {
-  .home_container {
-    height: 37rem;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .home_container {
-    padding: 0 0 1rem 0;
-    align-items: center;
-    height: 100vh;
+    background-image: linear-gradient(250deg, var(--gradient-color), var(--tetiary-color), var(--secondary-color));
   }
 
   .img_container {
@@ -123,8 +78,8 @@ h1 {
   .home_content {
     padding-top: 1rem;
     flex-direction: row-reverse;
-    max-width: 100rem;
-    margin-left: 5%;
+    width: 100%;
+    padding-left: 5%;
     align-items: flex-end;
     height: max-content;
   }

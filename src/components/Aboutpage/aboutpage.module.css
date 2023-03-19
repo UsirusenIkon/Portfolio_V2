@@ -1,13 +1,4 @@
 /* stylelint-disable csstree/validator */
-.about_container {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-  position: relative;
-  margin-bottom: 1rem;
-  background-color: var(--tetiary-color);
-}
 
 .about_content {
   flex-direction: column;

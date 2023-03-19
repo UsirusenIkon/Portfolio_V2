@@ -1,16 +1,17 @@
-import Button from "../reusables/Button/Button";
+import Button from "../../reusables/Button/Button";
 import styles from "./Homepage.module.css"
 import Ikon from "../../assets/ikon.svg"
 import ellipse from "../../assets/ellipse.svg"
 import frame from "../../assets/frame.svg"
 import frame1 from "../../assets/frame1.svg"
-import SocialIcons from "../reusables/Socialicons/SocialIcons";
+import SocialIcons from "../../reusables/Socialicons/SocialIcons";
+import Container from "../../reusables/Container/Container";
 
 function HomePage() {
   return(
-    <div id="home" className={`flex  ${styles.home_container}`}>
+    <Container id="home" className={`flex  ${styles.home_container}`}>
       <div className={`flex animate ${styles.home_content}`}>
-        <div className={`animate ${styles.img_container}`}>
+        <div className={`animate box_shadow ${styles.img_container}`}>
           <img src={Ikon} alt="Usirusen Ikon" 
           className={`${styles.img}`}
           />
@@ -42,7 +43,7 @@ function HomePage() {
       <div className={`${styles.home_back_drop}`}>
         <img className={`animate ${styles.home_back_drop_img}`} src={ellipse} alt="ellipse" />
       </div>
-    </div>
+    </Container>
   )
 }
 
