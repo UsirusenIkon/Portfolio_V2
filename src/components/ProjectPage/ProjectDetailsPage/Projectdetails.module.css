@@ -1,0 +1,93 @@
+.project {
+  position: relative;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.link {
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn_link {
+  height: 2.3rem;
+}
+
+.project_cards {
+  flex-direction: column;
+  max-width: 45rem;
+  width: 100%;
+  gap: 1rem;
+  text-align: center;
+}
+
+.project_content {
+  background-color: var(--filter-navicons-color);
+  color: var(--cards-color);
+  gap: 0.4rem;
+  flex-direction: column;
+  padding: 1rem;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.dott {
+  justify-content: center;
+}
+
+.dot {
+  margin: 0 1rem;
+}
+
+.img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.project_details {
+  justify-content: center;
+}
+
+.tech_grp {
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.arrow {
+  top: 20rem;
+  position: absolute;
+  background-color: var(--tetiary-color);
+  border-radius: 50%;
+  filter: drop-shadow(1px 1px 1px var(--accent-color));
+}
+
+.back {
+  left: 1rem;
+}
+
+.front {
+  right: 1rem;
+}
+
+.slide {
+  opacity: 0.5;
+  transition-duration: 1s;
+}
+
+.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}
+
+.btn {
+  border: 1px solid var(--primary-color);
+}
+
+@media screen and (min-width: 768px) {
+  .project {
+    height: unset;
+  }
+}
