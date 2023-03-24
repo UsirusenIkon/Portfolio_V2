@@ -1,37 +1,37 @@
-import HomeIcon from '@mui/icons-material/Home';
-import InfoIcon from '@mui/icons-material/Info';
-import AutoStoriesIcon from '@mui/icons-material/AutoStories';
-import BuildIcon from '@mui/icons-material/Build';
-import CallIcon from '@mui/icons-material/Call';
+import { HiHome } from 'react-icons/hi2';
+import { MdPhoneCallback } from 'react-icons/md';
+import { RiInformationFill } from 'react-icons/ri';
+import { TiSpanner } from 'react-icons/ti';
+import { IoIosConstruct } from 'react-icons/io';
 
 const navData = [
   {
     id: 0,
-    icon: <HomeIcon />,
+    icon: <HiHome />,
     text: 'Home',
     link: '#home',
   },
   {
     id: 1,
-    icon: <InfoIcon />,
+    icon: <RiInformationFill />,
     text: 'About',
     link: '#about',
   },
   {
     id: 2,
-    icon: <BuildIcon />,
+    icon: <TiSpanner />,
     text: 'Skills',
     link: '#skills',
   },
   {
     id: 3,
-    icon: <AutoStoriesIcon />,
+    icon: <IoIosConstruct />,
     text: 'Projects',
     link: '#projects',
   },
   {
     id: 4,
-    icon: <CallIcon />,
+    icon: <MdPhoneCallback />,
     text: 'Contact',
     link: '#contact',
   },

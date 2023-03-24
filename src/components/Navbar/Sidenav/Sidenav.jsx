@@ -7,7 +7,8 @@ import styles from './Sidenav.module.css';
 import AutoStoriesIcon from '@mui/icons-material/AutoStories';
 import HomeIcon from '@mui/icons-material/Home';
 import SocialIcons from '../../../reusables/Socialicons/SocialIcons';
-import { WbSunny, DarkMode } from '@mui/icons-material';
+import { MdDarkMode } from 'react-icons/md';
+import { BsFillSunFill } from 'react-icons/bs';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import projectData from '../../../data/projectData';
@@ -19,66 +20,19 @@ function Sidenav() {
   };
 
   const [theme, setTheme] = useTheme();
-
   const location = useLocation();
-  // const content = location.pathname === '/' ? (
-  //   <ul className={`flex ${styles.nav_list}`}>
-  //     {navData.map((item) => (
-  //       <Link
-  //         key={item.id}
-  //         className={`flex ${styles.nav_item}  ${
-  //           open ? styles.side_open : styles.side_close
-  //         }`}
-  //         to={item.link}
-  //         reloadDocument={item.link === '/' ? false : true}
-  //       >
-  //         <span
-  //           className={`flex animate ${
-  //             open ? styles.icon_open : styles.icon_close
-  //           }`}
-  //         >
-  //           {item.icon}
-  //         </span>
-  //         <span onClick={onClickHandler} className={`flex ${styles.nav_text}`}>
-  //           {item.text}
-  //         </span>
-  //       </Link>
-  //     ))}
-  //     <div
-  //       className={`flex ${styles.nav_icons} ${
-  //         open ? styles.see : styles.hide
-  //       }`}
-  //     >
-  //       <SocialIcons />
-  //     </div>
-  //   </ul>
-  // ) : (
-  //   <Link
-  //     className={`flex ${styles.nav_item}  ${
-  //       open ? styles.side_open : styles.side_close
-  //     }`}
-  //     to={'/'}
-  //   >
-  //     <span
-  //       className={`flex animate ${
-  //         open ? styles.icon_open : styles.icon_close
-  //       }`}
-  //     >
-  //       <HomeIcon />
-  //     </span>
-  //     <span onClick={onClickHandler} className={`flex ${styles.nav_text}`}>
-  //       Home
-  //     </span>
-  //   </Link>
-  // );
-  const { id } = useParams();
-  const idx = projectData.find((project) => project.id === Number(id));
-  console.log(idx);
 
-  let content;
+  const btn =
+    location.pathname === '/' ? (
+      <Button
+        className={`flex ${styles.hamburger_menu}  ${open ? styles.hm_style : ''}`}
+        onClick={onClickHandler}
+        Icon={open ? <CloseIcon /> : <MenuIcon />}
+      />
+    ) : null;
 
-  if (location.pathname === '/') {
-    content = (
+  const content =
+    location.pathname === '/' ? (
       <ul className={`flex ${styles.nav_list}`}>
         {navData.map((item) => (
           <Link
@@ -112,56 +66,11 @@ function Sidenav() {
           <SocialIcons />
         </div>
       </ul>
-    );
-  } else if (location.pathname === '/projects') {
-    content = (
-      <Link
-        className={`flex ${styles.nav_item}  ${
-          open ? styles.side_open : styles.side_close
-        }`}
-        to={'/'}
-      >
-        <span
-          className={`flex animate ${
-            open ? styles.icon_open : styles.icon_close
-          }`}
-        >
-          <HomeIcon />
-        </span>
-        <span onClick={onClickHandler} className={`flex ${styles.nav_text}`}>
-          Home
-        </span>
-      </Link>
-    );
-  } else if(location.pathname === `/projects/${idx.id}`) {
-    content = (
-      <Link
-        className={`flex ${styles.nav_item}  ${
-          open ? styles.side_open : styles.side_close
-        }`}
-        to="/projects"
-      >
-        <span
-          className={`flex animate ${
-            open ? styles.icon_open : styles.icon_close
-          }`}
-        >
-          <AutoStoriesIcon />,
-        </span>
-        <span onClick={onClickHandler} className={`flex ${styles.nav_text}`}>
-          Projects
-        </span>
-      </Link>
-    );
-  }
+    ) : null;
 
   return (
     <div className={`animate ${styles.Sidenav}`}>
-      <Button
-        className={`${styles.hamburger_menu}  ${open ? styles.hm_style : ''}`}
-        onClick={onClickHandler}
-        Icon={open ? <CloseIcon /> : <MenuIcon />}
-      />
+      {btn}
       <div
         className={`flex ${styles.nav_content} ${
           open ? styles.open : styles.close
@@ -172,22 +81,22 @@ function Sidenav() {
           className={`flex animate ${styles.theme}  ${
             open ? styles.theme_open : styles.theme_close
           }`}
-        >
+          >
           {theme === 'dark' ? (
             <span
               onClick={() => setTheme('light')}
               className={`flex ${styles.theme_icons}`}
-            >
-              Light
-              <WbSunny />
+              >
+              <label htmlFor="light">
+                <BsFillSunFill />
+              </label>
             </span>
           ) : (
             <span
               onClick={() => setTheme('dark')}
               className={`flex ${styles.theme_icons}`}
-            >
-              Dark
-              <DarkMode />
+              >
+              <MdDarkMode />
             </span>
           )}
         </div>

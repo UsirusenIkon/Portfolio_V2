@@ -3,7 +3,7 @@
 .about_content {
   flex-direction: column;
   border-radius: 1rem;
-  max-width: 40rem;
+  max-width: 41.9rem;
   padding: 1rem;
   gap: 1rem;
   background-color: var(--secondary-color);
@@ -35,12 +35,11 @@ h3 {
   border-radius: 50%;
   overflow: hidden;
   border: 3px solid var(--secondary-color);
-  background-color: var(--tetiary-color);
+  background-color: var(--img-color);
 }
 
 .img {
   width: 100%;
-  background-color: var(--tetiary-color);
 }
 
 .cv_btn {

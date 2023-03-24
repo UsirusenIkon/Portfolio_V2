@@ -67,16 +67,20 @@
   border-radius: 5px;
   position: fixed;
   top: 0.55rem;
+  align-items: center;
+  justify-content: center;
   right: 0.5rem;
-  width: unset;
-  height: unset;
-  padding: 2px 6px;
+  width: 2rem;
+  height: 2rem;
+  color: var(--accent-color);
+  background-color: var(--primary-color);
 }
 
 .nav_content {
   flex-direction: column;
   z-index: 400;
   position: fixed;
+  font-size: larger;
   top: 0;
   width: 22rem;
   padding-top: 7rem;
@@ -133,7 +137,7 @@
 
 .theme_close {
   left: 0.2rem;
-  color: var(--filter-navicons-color);
+  color: var(--filter-icons-color);
 }
 
 .theme_icons {
@@ -143,7 +147,7 @@
 }
 
 .icon_close {
-  color: var(--filter-navicons-color);
+  color: var(--filter-icons-color);
 }
 
 @media screen and (max-width: 768px) {
@@ -163,6 +167,6 @@
 
 @media screen and (min-width: 768px) {
   .hamburger_menu {
-    right: 3rem;
+    right: 2.7rem;
   }
 }

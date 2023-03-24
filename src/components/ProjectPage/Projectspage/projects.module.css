@@ -4,7 +4,7 @@ h4 {
 
 .projects_content {
   width: 100%;
-  max-width: 70rem;
+  max-width: 50rem;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -28,7 +28,7 @@ h4 {
   width: 100%;
   flex-direction: column;
   justify-content: space-between;
-  background-color: var(--filter-navicons-color);
+  background-color: var(--ellipse-color);
   color: var(--cards-color);
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -39,14 +39,13 @@ h4 {
   color: var(--accent-color);
 }
 
-.btn1 {
-  background-color: var(--filter-navicons-color);
+.btn_1 {
+  background-color: var(--ellipse-color);
   color: var(--cards-color);
 }
 
 @media screen and (min-width: 768px) {
   .projects_content {
-    width: max-content;
     justify-content: center;
     flex-direction: row;
     border-radius: 10px;
@@ -55,10 +54,8 @@ h4 {
   .works {
     padding: 1rem;
     height: 22rem;
-    max-width: 22rem;
     flex-direction: column;
     justify-content: space-between;
-    background-color: var(--primary-color);
     border-top-right-radius: 0;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
@@ -69,7 +66,6 @@ h4 {
     height: 22rem;
     flex-direction: column;
     justify-content: space-between;
-    max-width: 22rem;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 0;

@@ -1,3 +1,7 @@
+.skillspage {
+  flex-wrap: nowrap;
+}
+
 .components {
   justify-content: center;
   align-items: center;

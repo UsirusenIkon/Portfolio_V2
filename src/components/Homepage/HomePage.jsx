@@ -2,7 +2,6 @@ import Button from "../../reusables/Button/Button";
 import styles from "./Homepage.module.css"
 import Ikon from "../../assets/ikon.svg"
 import ellipse from "../../assets/ellipse.svg"
-import frame from "../../assets/frame.svg"
 import frame1 from "../../assets/frame1.svg"
 import SocialIcons from "../../reusables/Socialicons/SocialIcons";
 import Container from "../../reusables/Container/Container";
@@ -34,14 +33,19 @@ function HomePage() {
             />
         </div>
       </div>
-      <div className={`${styles.home_back_drop1}`}>
+      {/* <div className={`${styles.home_back_drop1}`}>
         <img className={`animate ${styles.home_back_drop_img1}`} src={frame} alt="frame" />
-      </div>
+      </div> */}
       <div className={`${styles.home_back_drop1}`}>
-        <img className={`animate ${styles.home_back_drop_img1}`} src={frame1} alt="frame" />
+        <svg className={`${styles.svg_img}`}>
+          <use width={'100%'} href={`${frame1}#img`}></use>
+        </svg>
       </div>
       <div className={`${styles.home_back_drop}`}>
-        <img className={`animate ${styles.home_back_drop_img}`} src={ellipse} alt="ellipse" />
+        {/* <img className={`animate ${styles.home_back_drop_img}`} src={ellipse} alt="ellipse" /> */}
+        <svg className={`${styles.svg_ellipse}`}>
+          <use width={'100%'} href={`${ellipse}#img`}></use>
+        </svg>
       </div>
     </Container>
   )

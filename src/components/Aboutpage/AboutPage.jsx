@@ -1,15 +1,15 @@
-import InfoIcon from '@mui/icons-material/Info';
 import Button from "../../reusables/Button/Button";
 import Ikon from "../../assets/ikon.svg"
 import styles from "./aboutpage.module.css"
 import Container from '../../reusables/Container/Container';
+import { RiInformationFill } from 'react-icons/ri';
 
 function AboutPage() {
   return(
     <Container id="about" className={`flex ${styles.about_container}`}>
       <div className={`heading`}>
         <h2 className='flex head'>
-          <InfoIcon />About me
+          <RiInformationFill />About me
         </h2>
         <p><b>Bio</b></p>
       </div>

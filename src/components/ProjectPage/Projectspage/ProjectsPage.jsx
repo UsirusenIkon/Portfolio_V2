@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import AutoStoriesIcon from '@mui/icons-material/AutoStories';
+import { IoIosConstruct } from 'react-icons/io';
 import Button from '../../../reusables/Button/Button';
 import styles from "./projects.module.css";
 import Container from '../../../reusables/Container/Container';
@@ -9,7 +9,7 @@ function ProjectsPage() {
     <Container id='projects' className={`flex ${styles.projects_container}`}>
       <div className={`heading`}>
         <h2 className='flex head'>
-          <AutoStoriesIcon />Projects
+          <IoIosConstruct />Projects
         </h2>
         <p><b>Recent Works</b></p>
       </div>
@@ -19,9 +19,9 @@ function ProjectsPage() {
           <p>A list of all my projects, both solo and collaborative works</p>
           <Link
             to="/projects"
-          >
+            >
             <Button
-              className={styles.btn1}
+              className={styles.btn_1}
               text="See Projects"
             />
           </Link>
