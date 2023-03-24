@@ -1,6 +1,4 @@
 import github from  "./../../../assets/github1.svg"
-import chrome from  "./../../../assets/chrome.svg"
-import npm from  "./../../../assets/npm.svg"
 import webpack from  "./../../../assets/webpack.svg"
 import vscode from  "./../../../assets/vscode.svg"
 import jest from  "./../../../assets/jest.svg"
@@ -20,31 +18,21 @@ const toolKit = [
   },
   {
     id: 2,
-    icon: chrome,
-    name: 'Chrome'
-  },
-  {
-    id: 3,
-    icon: npm,
-    name: 'Npm'
-  },
-  {
-    id: 4,
     icon: webpack,
     name: 'Webpack'
   },
   {
-    id: 5,
+    id: 3,
     icon: vscode,
     name: 'VScode'
   },
   {
-    id: 6,
+    id: 4,
     icon: jest,
     name: 'Jest'
   },
   {
-    id: 7,
+    id: 5,
     icon: rspec,
     name: 'Rspec'
   }

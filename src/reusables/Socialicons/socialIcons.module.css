@@ -1,0 +1,8 @@
+.icon_container {
+  width: max-content;
+  gap: 0.5rem;
+}
+
+.icon_item {
+  padding: 4px;
+}

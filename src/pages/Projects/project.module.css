@@ -1,0 +1,12 @@
+/* stylelint-disable csstree/validator */
+.project {
+  margin-bottom: 0;
+  gap: 1rem;
+  background-color: var(--secondary-color);
+}
+
+@media screen and (min-width: 768px) {
+  .project {
+    height: unset;
+  }
+}

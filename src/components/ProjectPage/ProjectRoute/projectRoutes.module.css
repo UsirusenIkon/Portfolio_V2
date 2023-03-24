@@ -1,0 +1,43 @@
+.project {
+  gap: 1rem;
+  padding: 0;
+  flex-direction: unset;
+  background-color: unset;
+}
+
+.project_cards {
+  flex-direction: column;
+  max-width: 20rem;
+  border-radius: 1rem;
+}
+
+.project_content {
+  background-color: var(--filter-navicons-color);
+  color: var(--cards-color);
+  gap: 0.4rem;
+  flex-direction: column;
+  padding: 0.2rem 0.5rem 0.5rem 0.5rem;
+  width: 100%;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.img {
+  width: 100%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.project_details {
+  justify-content: space-between;
+}
+
+.tech_grp {
+  gap: 0.5rem;
+}
+
+.btn {
+  height: 2.5rem;
+  width: 8rem;
+  border: 1px solid var(--primary-color);
+}
