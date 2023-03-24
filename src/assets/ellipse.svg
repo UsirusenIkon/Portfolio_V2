@@ -1,3 +1,3 @@
-<svg width="490" height="646" viewBox="0 0 490 646" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="453" cy="193" r="453" fill="#232525"/>
+<svg width="490" height="646" viewBox="0 0 490 646" id='img' fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+<circle cx="453" cy="193" r="453" fill="currentColor"/>
 </svg>
