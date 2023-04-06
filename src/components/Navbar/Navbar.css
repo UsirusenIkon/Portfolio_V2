@@ -10,16 +10,26 @@
   width: 100%;
   align-items: center;
   padding: 1em;
+}
+
+.cream {
   background-color: var(--secondary-color);
 }
 
+.transparent {
+  background-color: transparent;
+}
+
 .logo {
+  opacity: 1;
   position: relative;
   font-weight: 700;
   font-size: 1.3rem;
   align-items: center;
   justify-content: center;
-  transition: 0.3s ease-in-out;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  padding: 0.3rem;
 }
 
 .logo-img {

@@ -1,19 +1,16 @@
 import { useState } from 'react';
-import { Link, useLocation, useParams } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import useTheme from '../../../hooks/useTheme';
 import navData from '../../../data/NavData';
-import Button from '../../../reusables/Button/Button';
 import styles from './Sidenav.module.css';
-import AutoStoriesIcon from '@mui/icons-material/AutoStories';
-import HomeIcon from '@mui/icons-material/Home';
 import SocialIcons from '../../../reusables/Socialicons/SocialIcons';
 import { MdDarkMode } from 'react-icons/md';
 import { BsFillSunFill } from 'react-icons/bs';
-import MenuIcon from '@mui/icons-material/Menu';
-import CloseIcon from '@mui/icons-material/Close';
-import projectData from '../../../data/projectData';
 
 function Sidenav() {
+  const width = window.innerWidth < 768;
+  const [hover, setHover] = useState(-1);
+
   const [open, setopen] = useState(false);
   const onClickHandler = () => {
     setopen(!open);
@@ -24,11 +21,16 @@ function Sidenav() {
 
   const btn =
     location.pathname === '/' ? (
-      <Button
-        className={`flex ${styles.hamburger_menu}  ${open ? styles.hm_style : ''}`}
+      <div
+        className={`flex ${styles.hamburger_menu} ${
+          open ? styles.hm_style : ''
+        }`}
         onClick={onClickHandler}
-        Icon={open ? <CloseIcon /> : <MenuIcon />}
-      />
+      >
+        <span className={`${styles.line} ${open ? styles.tilt : ''}`}></span>
+        <span className={`${styles.line} ${open ? styles.hide : ''}`}></span>
+        <span className={`${styles.line} ${open ? styles.rtilt : ''}`}></span>
+      </div>
     ) : null;
 
   const content =
@@ -41,21 +43,28 @@ function Sidenav() {
               open ? styles.side_open : styles.side_close
             }`}
             to={item.link}
+            onClick={onClickHandler}
             reloadDocument={item.link === '/' ? false : true}
           >
             <span
               className={`flex animate ${
                 open ? styles.icon_open : styles.icon_close
               }`}
+              onMouseEnter={() => setHover(item.id)}
+              onMouseLeave={() => setHover(-1)}
             >
               {item.icon}
             </span>
             <span
-              onClick={onClickHandler}
               className={`flex ${styles.nav_text}`}
             >
               {item.text}
             </span>
+            {hover === item.id && !open ? (
+              <div className={styles.hover_cover}>
+                <span className={styles.hover}>{item.text}</span>
+              </div>
+            ) : null}
           </Link>
         ))}
         <div
@@ -81,12 +90,12 @@ function Sidenav() {
           className={`flex animate ${styles.theme}  ${
             open ? styles.theme_open : styles.theme_close
           }`}
-          >
+        >
           {theme === 'dark' ? (
             <span
               onClick={() => setTheme('light')}
               className={`flex ${styles.theme_icons}`}
-              >
+            >
               <label htmlFor="light">
                 <BsFillSunFill />
               </label>
@@ -95,12 +104,15 @@ function Sidenav() {
             <span
               onClick={() => setTheme('dark')}
               className={`flex ${styles.theme_icons}`}
-              >
+            >
               <MdDarkMode />
             </span>
           )}
         </div>
       </div>
+        <div 
+          onClick={onClickHandler}
+          className={open ? styles.on : styles.off}></div>
     </div>
   );
 }

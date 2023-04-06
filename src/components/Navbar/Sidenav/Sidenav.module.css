@@ -1,5 +1,17 @@
-.sidenav {
-  position: relative;
+:root {
+  --bar-width: 2rem;
+  --bar-height: 4px;
+  --hamburger-gap: 3px;
+  --hamburger-margin: 1.5rem;
+  --animation-timing: 200ms ease-in-out;
+  --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
+}
+
+.on {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 402;
 }
 
 .open {
@@ -63,22 +75,60 @@
 }
 
 .hamburger_menu {
+  --x-width: calc(var(--hamburger-height) * 1.41421356237);
+
   z-index: 700;
   border-radius: 5px;
   position: fixed;
-  top: 0.55rem;
+  top: 0.95rem;
   align-items: center;
   justify-content: center;
   right: 0.5rem;
-  width: 2rem;
-  height: 2rem;
-  color: var(--accent-color);
-  background-color: var(--primary-color);
+  gap: var(--hamburger-gap);
+  font-size: 1.5rem;
+  font-weight: 900;
+  flex-direction: column;
+}
+
+.hamburger_menu input {
+  appearance: none;
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  pointer-events: none;
+  display: block;
+}
+
+.line {
+  content: "";
+  width: var(--bar-width);
+  height: var(--bar-height);
+  background-color: var(--accent-color);
+  border-radius: 3rem;
+  transform-origin: left center;
+  transition: opacity var(--animation-timing), width var(--animation-timing), rotate var(--animation-timing), translate var(--animation-timing), background-color var(--animation-timing);
+  display: block;
+  box-shadow: 1px 1px 1px var(--secondary-color);
+}
+
+.tilt {
+  rotate: 45deg;
+  width: var(--x-width);
+  translate: 0 calc(var(--bar-height) / -2);
+  display: block;
+}
+
+.rtilt {
+  rotate: -45deg;
+  width: var(--x-width);
+  translate: 0 calc(var(--bar-height) / 2);
+  display: block;
 }
 
 .nav_content {
   flex-direction: column;
-  z-index: 400;
+  z-index: 410;
   position: fixed;
   font-size: larger;
   top: 0;
@@ -97,12 +147,11 @@
 }
 
 .nav_item {
-  justify-content: space-between;
-  width: 8rem;
+  gap: 1rem;
 }
 
 .nav_text {
-  width: 6rem;
+  width: 5rem;
   text-align: left;
   align-items: center;
 }
@@ -111,10 +160,18 @@
   transition: 0.3s ease-in-out;
 }
 
-.hm_style {
-  color: var(--accent-color);
-  background-color: var(--primary-color);
-  filter: drop-shadow(2px 2px 1px var(--accent-color));
+.hover_cover {
+  width: 5rem;
+  text-align: right;
+}
+
+.hover {
+  position: relative;
+  right: 13.5rem;
+  padding: 0.2rem;
+  border-radius: 5px;
+  color: var(--tetiary-color);
+  background-color: var(--accent-color);
 }
 
 .hide {
