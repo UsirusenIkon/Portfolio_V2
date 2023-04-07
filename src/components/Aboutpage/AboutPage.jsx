@@ -3,6 +3,7 @@ import Ikon from "../../assets/ikon.svg"
 import styles from "./aboutpage.module.css"
 import Container from '../../reusables/Container/Container';
 import { RiInformationFill } from 'react-icons/ri';
+import { Link } from "react-router-dom";
 
 function AboutPage() {
   return(
@@ -34,10 +35,14 @@ function AboutPage() {
             easily accessible for customers on with my front-end designs.
           </p>
         </div>
-        <Button 
-          text="Get My Resume"
-          className={`${styles.cv_btn}`}
-        />
+        <Link>
+          <Button
+            to='https://docs.google.com/document/d/1v05wO-apOnyEmDoY2I8CWOXWURp9PYSm-RKRu_9P_Gk/edit?usp=sharing'
+            type='button'
+            text="Get My Resume"
+            className={`${styles.cv_btn}`}
+          />
+        </Link>
       </div>
     </Container>
   )
