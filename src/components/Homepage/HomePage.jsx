@@ -8,7 +8,7 @@ import Container from "../../reusables/Container/Container";
 
 function HomePage() {
   return(
-    <Container id="home" className={`flex  ${styles.home_container}`}>
+    <Container id="home" className={`flex ${styles.home_container}`}>
       <div className={`flex animate ${styles.home_content}`}>
         <div className={`animate box_shadow ${styles.img_container}`}>
           <img src={Ikon} alt="Usirusen Ikon" 
@@ -28,21 +28,18 @@ function HomePage() {
             className={`${styles.home_icons}`}
           />
           <Button 
+            type='button'
             className={`${styles.home_btn}`}
             text='Let’s Connect'
             />
         </div>
       </div>
-      {/* <div className={`${styles.home_back_drop1}`}>
-        <img className={`animate ${styles.home_back_drop_img1}`} src={frame} alt="frame" />
-      </div> */}
       <div className={`${styles.home_back_drop1}`}>
         <svg className={`${styles.svg_img}`}>
           <use width={'100%'} href={`${frame1}#img`}></use>
         </svg>
       </div>
       <div className={`${styles.home_back_drop}`}>
-        {/* <img className={`animate ${styles.home_back_drop_img}`} src={ellipse} alt="ellipse" /> */}
         <svg className={`${styles.svg_ellipse}`}>
           <use width={'100%'} href={`${ellipse}#img`}></use>
         </svg>
