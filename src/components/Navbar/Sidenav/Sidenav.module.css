@@ -80,10 +80,10 @@
   z-index: 700;
   border-radius: 5px;
   position: fixed;
-  top: 0.95rem;
+  top: 1.07rem;
+  right: 1rem;
   align-items: center;
   justify-content: center;
-  right: 0.5rem;
   gap: var(--hamburger-gap);
   font-size: 1.5rem;
   font-weight: 900;
@@ -186,6 +186,21 @@
   position: absolute;
   top: 4.5rem;
   transition: 0.3s ease-in-out;
+}
+
+.theme_pc {
+  z-index: 800;
+  cursor: pointer;
+  position: absolute;
+  top: 1.4rem;
+  right: 23rem;
+}
+
+.theme_pc_light {
+  box-shadow: 1px 1px 1px var(--secondary-color);
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  padding: 2px;
 }
 
 .theme_open {
