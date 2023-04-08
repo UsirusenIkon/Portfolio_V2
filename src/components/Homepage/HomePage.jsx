@@ -5,6 +5,7 @@ import ellipse from "../../assets/ellipse.svg"
 import frame1 from "../../assets/frame1.svg"
 import SocialIcons from "../../reusables/Socialicons/SocialIcons";
 import Container from "../../reusables/Container/Container";
+import { Link } from "react-router-dom";
 
 function HomePage() {
   return(
@@ -27,11 +28,15 @@ function HomePage() {
           <SocialIcons 
             className={`${styles.home_icons}`}
           />
-          <Button 
-            type='button'
-            className={`${styles.home_btn}`}
-            text='Let’s Connect'
+          <Link to='#contact'
+            reloadDocument={'#contact' === '/' ? false : true}
+            >
+            <Button 
+              type='button'
+              className={`${styles.home_btn}`}
+              text='Let’s Connect'
             />
+          </Link>
         </div>
       </div>
       <div className={`${styles.home_back_drop1}`}>

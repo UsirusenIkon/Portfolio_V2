@@ -39,6 +39,14 @@ h1 {
   display: none;
 }
 
+.home_btn:hover {
+  width: 12rem;
+}
+
+.home_btn:active {
+  transform: scale(1.2);
+}
+
 .home_back_drop1 {
   max-width: 37rem;
   position: absolute;
