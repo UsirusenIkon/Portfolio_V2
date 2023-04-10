@@ -13,7 +13,7 @@ function HomePage() {
       <div className={`flex animate ${styles.home_content}`}>
         <div className={`animate box_shadow ${styles.img_container}`}>
           <img src={Ikon} alt="Usirusen Ikon" 
-          className={`${styles.img}`}
+          className={styles.img}
           />
         </div>
         <div className={`flex ${styles.text_content}`}>
@@ -21,7 +21,7 @@ function HomePage() {
             Hi, I’m Usirusen<br/>
             Software Developer
           </h1>
-          <p className={`${styles.text}`}>
+          <p className={styles.text}>
             I’m Usirusen Ikon, a Software Developer based in Nigeria. 
             I create functional and  user-friendly websites that meets the needs of users.
           </p>
@@ -32,8 +32,8 @@ function HomePage() {
             reloadDocument={'#contact' === '/' ? false : true}
             >
             <Button 
-              type='button'
               className={`${styles.home_btn}`}
+              type='button'
               text='Let’s Connect'
             />
           </Link>
