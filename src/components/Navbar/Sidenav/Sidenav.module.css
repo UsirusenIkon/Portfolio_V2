@@ -17,6 +17,7 @@
 .open {
   right: -6rem;
   border-bottom-left-radius: 1rem;
+  border-top-left-radius: 1rem;
   padding-left: 2rem;
   max-height: 25rem;
   animation: scale-in-right 800ms ease-in-out;
