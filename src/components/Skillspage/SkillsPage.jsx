@@ -1,6 +1,6 @@
-import Languages from "./Languages/Languages";
-import Frameworks from "./Frameworks/Frameworks";
-import Tools from "./Tools/Tools";
+import Languages from "./Languages";
+import Frameworks from "./Frameworks";
+import Tools from "./Tools";
 import styles from "./skillspage.module.css";
 import Container from '../../reusables/Container/Container';
 import { TiSpanner } from 'react-icons/ti';
@@ -16,9 +16,9 @@ function SkillsPage() {
         <p><b>Full-stack Developer</b></p>
       </div>
       <div className={`flex ${styles.components}`}>
+        <Tools />
         <Languages  />
         <Frameworks />
-        <Tools />
       </div>
     </Container>
   )
