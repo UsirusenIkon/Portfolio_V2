@@ -1,12 +1,21 @@
 /* stylelint-disable csstree/validator */
 .project {
-  margin-bottom: 0;
   gap: 1rem;
-  background-color: var(--secondary-color);
+}
+
+.head {
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .project {
+    height: 100%;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .project {
+    min-height: 100%;
     height: unset;
   }
 }

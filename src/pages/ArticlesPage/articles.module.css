@@ -1,0 +1,26 @@
+.item {
+  margin-top: 5rem;
+  max-width: 20rem;
+  flex-direction: column;
+}
+
+.item_image {
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.item_link {
+  background-color: var(--filter-navicons-color);
+  color: var(--cards-color);
+  gap: 0.4rem;
+  flex-direction: column;
+  padding: 0.5rem;
+  width: 100%;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.btn {
+  border: 1px solid var(--cards-color);
+}

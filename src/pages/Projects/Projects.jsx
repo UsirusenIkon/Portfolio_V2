@@ -8,7 +8,7 @@ import { RiArrowGoBackFill } from "react-icons/ri";
 function Projects() {
   return (
     <Container className={`${styles.project}`}>
-      <h1 className="heading">./Projects</h1>
+      <h1 className="head">Projects</h1>
       <Link to="/" 
         className="btn back">
         <RiArrowGoBackFill />
