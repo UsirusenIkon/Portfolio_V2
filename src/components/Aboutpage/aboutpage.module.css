@@ -3,7 +3,7 @@
 .about_content {
   flex-direction: column;
   border-radius: 1rem;
-  max-width: 41.9rem;
+  max-width: 61.9rem;
   padding: 1rem;
   gap: 1rem;
   background-color: var(--secondary-color);
@@ -47,10 +47,6 @@ h3 {
 }
 
 @media screen and (min-width: 768px) {
-  .about_container {
-    height: 95vh;
-  }
-
   .about_header {
     gap: 1rem;
     font-size: small;

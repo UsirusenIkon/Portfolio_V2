@@ -1,9 +1,9 @@
-import github from  "./../../../assets/github1.svg"
-import webpack from  "./../../../assets/webpack.svg"
-import vscode from  "./../../../assets/vscode.svg"
-import jest from  "./../../../assets/jest.svg"
-import rspec from  "./../../../assets/rspec.svg"
-import git from  "./../../../assets/git.svg"
+import github from  "../assets/github1.svg"
+import webpack from  "../assets/webpack.svg"
+import vscode from  "../assets/vscode.svg"
+import jest from  "../assets/jest.svg"
+import rspec from  "../assets/rspec.svg"
+import git from  "../assets/git.svg"
 
 const toolKit = [
   {

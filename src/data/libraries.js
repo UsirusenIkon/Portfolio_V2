@@ -1,7 +1,7 @@
-import rails from "./../../../assets/rails.svg"
-import react from "./../../../assets/react.svg"
-import redux from "../../../assets/redux.svg"
-import postcss from "../../../assets/postcss.svg"
+import rails from "../assets/rails.svg"
+import react from "../assets/react.svg"
+import redux from "../assets/redux.svg"
+import postcss from "../assets/postcss.svg"
 
 const libraries = [
   {

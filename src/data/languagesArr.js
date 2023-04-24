@@ -1,8 +1,8 @@
-import javascript from '../../../assets/javascript.svg'
-import html from '../../../assets/html.svg'
-import css from '../../../assets/css.svg'
-import ruby from '../../../assets/ruby.svg'
-import postgres from '../../../assets/postgres.svg'
+import javascript from '../assets/javascript.svg'
+import html from '../assets/html.svg'
+import css from '../assets/css.svg'
+import ruby from '../assets/ruby.svg'
+import postgres from '../assets/postgres.svg'
 
 const languageArr = [
   {

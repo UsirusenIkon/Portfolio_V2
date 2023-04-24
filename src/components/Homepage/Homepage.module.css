@@ -1,15 +1,20 @@
 /* stylelint-disable csstree/validator */
 .home_container {
   background-image: linear-gradient(250deg, var(--tetiary-color), var(--secondary-color));
+  z-index: 500;
 }
 
 .home_content {
+  z-index: 50;
   padding-top: 6rem;
   gap: 2rem;
-  z-index: 300;
   width: 100%;
   flex-direction: column-reverse;
   transition: all 0.3ms ease-in-out;
+}
+
+.btn_wrap {
+  width: max-content;
 }
 
 h1 {
@@ -43,27 +48,14 @@ h1 {
   max-width: 37rem;
   position: absolute;
   top: 1rem;
-  right: 2rem;
-}
-
-.home_back_drop_img1 {
-  width: 100%;
+  right: 1rem;
 }
 
 .svg_img {
+  z-index: 1;
   width: 592px;
   height: 482px;
   color: var(--accent-color);
-}
-
-.svg_ellipse {
-  width: 25rem;
-  height: 50rem;
-  color: var(--ellipse-color);
-}
-
-svg {
-  fill: currentColor;
 }
 
 @media screen and (min-width: 768px) {
@@ -119,5 +111,16 @@ svg {
     top: 1rem;
     max-width: 39rem;
     left: 4rem;
+  }
+
+  .svg_ellipse {
+    width: 25rem;
+    height: 50rem;
+    color: var(--ellipse-color);
+    overflow: hidden;
+  }
+
+  svg {
+    fill: currentColor;
   }
 }

@@ -1,12 +1,12 @@
-import languageArr from "./LanguagesArr";
-import "../icons.css"
+import libraries from "../../data/libraries";
+import "./icons.css"
 
-function Languages() {
+function Frameworks() {
   return (
-    <ul className="flex box_shadow animate icons-backdrop">
-      <h3>Languages</h3>
+    <ul className="flex box_shadow icons-backdrop">
+      <h3>Frameworks</h3>
       <div className="flex icons-container">
-        {languageArr.map((l) => (
+        {libraries.map((l) => (
           <li className="flex icon-container" key={l.id}>
             <div className="flex backdrop">
               <img className="icon" src={l.icon} alt={l.name} />
@@ -19,4 +19,4 @@ function Languages() {
   )
 }
 
-export default Languages;
+export default Frameworks;

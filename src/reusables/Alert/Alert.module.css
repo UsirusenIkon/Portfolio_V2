@@ -1,0 +1,30 @@
+.alert {
+  position: fixed;
+  top: 9%;
+  right: 1rem;
+  background: var(--primary-color);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  padding: 0.5rem 1rem;
+}
+
+.alert p {
+  gap: 1rem;
+}
+
+.alert::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  background: #2d2d2d;
+  left: 0;
+  top: 0;
+  border-radius: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .alert {
+    top: 12%;
+    right: 5rem;
+  }
+}

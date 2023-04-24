@@ -4,22 +4,32 @@
 }
 
 .header-headline {
-  z-index: 500;
+  z-index: 420;
   position: relative;
   position: fixed;
   width: 100%;
   align-items: center;
   padding: 1em;
+}
+
+.cream {
   background-color: var(--secondary-color);
 }
 
+.transparent {
+  background-color: transparent;
+}
+
 .logo {
+  opacity: 1;
   position: relative;
   font-weight: 700;
   font-size: 1.3rem;
   align-items: center;
   justify-content: center;
-  transition: 0.3s ease-in-out;
+  border-radius: 5px;
+  background-color: var(--tetiary-color);
+  padding: 0.3rem;
 }
 
 .logo-img {

@@ -6,3 +6,9 @@
 .icon_item {
   padding: 4px;
 }
+
+@media screen and (min-width: 768px) {
+  .icon_img:hover {
+    transform: scale(1.2);
+  }
+}

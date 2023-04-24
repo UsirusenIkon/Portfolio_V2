@@ -1,8 +1,9 @@
 .project {
   gap: 1rem;
   padding: 0;
+  margin-top: 5rem;
+  flex-wrap: wrap;
   flex-direction: unset;
-  background-color: unset;
 }
 
 .project_cards {
@@ -40,4 +41,10 @@
   height: 2.5rem;
   width: 8rem;
   border: 1px solid var(--primary-color);
+}
+
+@media screen and (min-width: 768px) {
+  .project {
+    height: unset;
+  }
 }

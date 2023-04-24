@@ -1,21 +1,24 @@
+import { Link } from 'react-router-dom';
 import socialItems from '../../data/socialItems';
 import styles from './socialIcons.module.css';
 
-function SocialIcons({className}) {
+function SocialIcons(className) {
   return (
-    <ul className={`flex animate ${styles.icon_container}`}>
+    <div className={`flex animate ${styles.icon_container}`}>
       {socialItems.map((item) => (
-        <a href={item.link}
-          key={item.id} 
-          className={`flex ${styles.icon_item}`}>
-          <span
-            className={`animate ${className} ${styles.icon_img}`}
-            >
+        <Link
+          key={item.id}
+          to={item.link}
+          target='_blank'
+          title={item.name}
+          className={`flex ${styles.icon_item} ${className}`}
+        >
+          <span className={`${styles.icon_img}`}>
             {item.icon}
           </span>
-        </a>
+        </Link>
       ))}
-    </ul>
+    </div>
   );
 }
 
