@@ -1,18 +1,18 @@
 .contact {
   flex-direction: column;
-  margin: 0 auto 3rem auto;
   border-radius: 10px;
-  max-width: 50rem;
+  width: 100%;
+  max-width: 61.9rem;
 }
 
 .contact_info {
-  height: 23rem;
+  width: 100%;
+  padding: 1rem;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   color: var(--cards-color);
   background-color: var(--ellipse-color);
-  width: 100%;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }
@@ -27,6 +27,7 @@ h5 {
 }
 
 .info {
+  width: 100%;
   gap: 0.5rem;
   flex-direction: column;
 }
@@ -58,19 +59,34 @@ h5 {
 }
 
 .form_input {
+  margin-top: 3px;
   background-color: inherit;
   border-radius: 10px;
   border: 1px solid var(--accent-color);
-  height: 2rem;
   width: 100%;
-  padding: 0 0.3rem;
+  padding: 0.5rem 0.5rem;
+  color: var(--accent-color);
+}
+
+.form_input::placeholder {
+  color: var(--accent-color);
+  opacity: 0.4;
+}
+
+.form_input:focus {
+  outline: 1px solid var(--accent-color);
 }
 
 .textarea {
+  padding: 0.5rem;
   height: 5rem;
 }
 
-@media screen and (min-width: 460px) and (max-width: 766px) {
+label span {
+  color: red;
+}
+
+@media screen and (min-width: 480px) and (max-width: 766px) {
   .info_content {
     flex-direction: unset;
   }
