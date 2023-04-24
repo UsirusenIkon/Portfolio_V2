@@ -31,7 +31,7 @@ function Navbar() {
         <i className="logo-text">[Ikon]</i>
       </Link>
     );
-  } else if (location.pathname === '/projects') {
+  } else if (location.pathname === '/projects' || '/articles') {
     content = (
       <Link className="logo flex" to="/">
         <i className="logo-text">[Ikon]</i>

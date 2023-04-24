@@ -9,7 +9,7 @@ function ProjectRoutes() {
     <Container id='id' className={`flex ${styles.project}`}>
       {projectData.map((card) => (
         <div key={card.id} className={`flex box_shadow ${styles.project_cards}`}>
-          <div className="cards-image flex">
+          <div className="flex">
             <img
               src={card.featuredImage.url}
               className={`flex ${styles.img}`}

@@ -14,6 +14,9 @@ function Sidenav() {
     useEffect(() => {
       function handleResize() {
         setMediaScreen(window.innerWidth);
+        if (window.innerWidth >= 768) {
+          setopen(false)
+        }
       }
 
     window.addEventListener('resize', handleResize);
@@ -174,7 +177,7 @@ function Sidenav() {
                 onClick={() => setTheme('light')}
                 className={`flex ${styles.theme_icons}`}
               >
-                <label htmlFor="light">
+                <label htmlFor="dark">
                   <MdDarkMode />
                 </label>
               </span>
@@ -183,7 +186,9 @@ function Sidenav() {
                 onClick={() => setTheme('dark')}
                 className={`flex ${styles.theme_icons} ${styles.theme_pc_light}`}
               >
-                <BsFillSunFill />
+                <label htmlFor="light">
+                  <BsFillSunFill />
+                </label>
               </span>
             )}
           </div>

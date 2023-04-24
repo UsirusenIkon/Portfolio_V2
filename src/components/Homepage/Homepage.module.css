@@ -84,7 +84,6 @@ h1 {
   }
 
   .home_content {
-    /* z-index: 1000; */
     padding-top: 1rem;
     flex-direction: row-reverse;
     width: 100%;

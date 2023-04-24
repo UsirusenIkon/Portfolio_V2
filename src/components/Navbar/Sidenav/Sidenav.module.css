@@ -183,25 +183,25 @@
 }
 
 .theme {
-  cursor: pointer;
   position: absolute;
   top: 4.5rem;
   transition: 0.3s ease-in-out;
 }
 
 .theme_pc {
-  z-index: 800;
-  cursor: pointer;
   position: absolute;
   top: 1.4rem;
   right: 23rem;
 }
 
+.theme_pc span label {
+  cursor: pointer;
+}
+
 .theme_pc_light {
-  box-shadow: 1px 1px 1px var(--secondary-color);
-  border-radius: 50%;
+  border-radius: 10px;
   background-color: var(--secondary-color);
-  padding: 2px;
+  padding: 4px 3px 1px 3px;
 }
 
 .theme_open {
@@ -241,5 +241,9 @@
 @media screen and (min-width: 768px) {
   .hamburger_menu {
     right: 2.7rem;
+  }
+
+  .nav_content {
+    z-index: 500;
   }
 }
