@@ -104,3 +104,11 @@ ul {
   position: relative;
   top: 2.5rem;
 }
+
+footer {
+  padding: 1rem;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+}

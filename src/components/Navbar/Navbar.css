@@ -46,11 +46,6 @@
   filter: drop-shadow(1px 1px 1px var(--accent-color));
 }
 
-.logo:hover {
-  filter: drop-shadow(2px 2px 2px  var(--accent-color));
-  color: var(--accent-color);
-}
-
 .navbar {
   flex-direction: row-reverse;
   gap: 1rem;
@@ -67,5 +62,10 @@
 @media screen and (min-width: 768px) {
   .logo {
     left: 2.4rem;
+  }
+
+  .logo:hover {
+    filter: drop-shadow(2px 2px 2px  var(--accent-color));
+    color: var(--accent-color);
   }
 }
