@@ -8,4 +8,20 @@
   border-radius: 5px;
   background-color: var(--accent-color);
   color: var(--primary-color);
+  cursor: pointer;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn:active {
+  border-radius: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .btn:hover {
+    width: 11.77rem;
+  }
 }

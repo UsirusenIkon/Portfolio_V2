@@ -1,8 +1,13 @@
 import './Button.css';
 
-function Button({ className, text, onClick, Icon }) {
+function Button({ className, text, onClick, Icon, type, disabled = false }) {
   return (
-    <button type="button" className={`btn ${className}`} onClick={onClick}>
+    <button
+      type={type}
+      disabled={disabled}
+      className={`btn ${className}`}
+      onClick={onClick}
+    >
       {text}
       {Icon && Icon}
     </button>

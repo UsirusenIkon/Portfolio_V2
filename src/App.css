@@ -60,14 +60,14 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 a {
-  color: var(--accent-color);
+  color: inherit;
   text-decoration: inherit;
+  max-width: max-content;
 }
 
 .App {
-  background-color: var(--primary-color);
-  height: 100%;
   color: var(--accent-color);
+  background-color: var(--tetiary-color);
 }
 
 .animate {
@@ -75,19 +75,20 @@ a {
 }
 
 .heading {
-  margin-top: 1rem;
   margin-bottom: 3rem;
   font-size: clamp(1rem, 7vw, 1.3rem);
   text-align: center;
+  position: relative;
+}
+
+.head {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .box_shadow {
   box-shadow: -10px 10px 11px 1px var(--shadow-color);
-}
-
-.head {
-  align-items: center;
-  justify-content: center;
 }
 
 ul {
@@ -101,5 +102,5 @@ ul {
 
 .back {
   position: relative;
-  bottom: 1.5rem;
+  top: 2.5rem;
 }
