@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 function ProjectRoutes() {
   return (
     <Container id='id' className={`flex ${styles.project}`}>
+      <div className={`${styles.project_container}`}>
       {projectData.map((card) => (
         <div key={card.id} className={`flex box_shadow ${styles.project_cards}`}>
           <div className="flex">
@@ -33,6 +34,7 @@ function ProjectRoutes() {
           </div>
         </div>
       ))}
+      </div>
     </Container>
   );
 }

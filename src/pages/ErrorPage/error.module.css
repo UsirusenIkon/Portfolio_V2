@@ -2,3 +2,25 @@
   text-align: center;
   height: 100vh;
 }
+
+.img {
+  width: 100%;
+  max-width: 50rem;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+}
+
+.text {
+  z-index: 100;
+  color: var(--cards-color);
+}
+
+.img_wrap {
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  position: absolute;
+  bottom: 0;
+  background-color: #282929dc;
+}

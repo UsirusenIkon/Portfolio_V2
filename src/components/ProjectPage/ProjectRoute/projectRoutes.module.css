@@ -2,13 +2,17 @@
   gap: 1rem;
   padding: 0;
   margin-top: 5rem;
-  flex-wrap: wrap;
-  flex-direction: unset;
+}
+
+.project_container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
 }
 
 .project_cards {
   flex-direction: column;
-  max-width: 20rem;
+  width: 100%;
   border-radius: 1rem;
 }
 
@@ -43,8 +47,18 @@
   border: 1px solid var(--primary-color);
 }
 
+@media screen and (500px < width < 768px) {
+  .project_container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .project {
     height: unset;
+  }
+
+  .project_container {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
