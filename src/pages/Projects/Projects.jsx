@@ -1,4 +1,3 @@
-import projectData from "../../data/projectData";
 import ProjectRoutes from "../../components/ProjectPage/ProjectRoute/ProjectRoutes";
 import Container from "../../reusables/Container/Container";
 import styles from "./project.module.css";

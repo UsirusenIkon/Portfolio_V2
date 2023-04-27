@@ -1,6 +1,5 @@
 import Button from '../../reusables/Button/Button';
 import Ikon1 from "../../assets/ikon2.svg";
-import Ikon2 from "../../assets/ikon1.svg";
 import styles from './aboutpage.module.css';
 import Container from '../../reusables/Container/Container';
 import { RiInformationFill } from 'react-icons/ri';

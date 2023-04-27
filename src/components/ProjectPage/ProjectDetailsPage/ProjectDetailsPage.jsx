@@ -1,6 +1,3 @@
-import { useState } from 'react';
-import projectData from '../../../data/projectData';
-import { ArrowBackRounded, ArrowForwardRounded } from '@mui/icons-material';
 import styles from './Projectdetails.module.css';
 import Button from '../../../reusables/Button/Button';
 import Container from '../../../reusables/Container/Container';
