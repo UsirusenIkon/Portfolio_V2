@@ -68,7 +68,7 @@ h1 {
     border-radius: 50%;
     overflow: hidden;
     margin: 0 auto;
-    padding: 1rem 0;
+    max-width: 28rem;
     z-index: 400;
     background-color: var(--img-color);
   }
@@ -76,7 +76,7 @@ h1 {
   .img {
     width: 100%;
     position: relative;
-    top: 2.4rem;
+    top: 1.4rem;
   }
 
   .text_content {
