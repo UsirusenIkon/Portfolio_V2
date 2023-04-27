@@ -1,8 +1,8 @@
 import Button from "../../reusables/Button/Button";
-import styles from "./Homepage.module.css"
-import Ikon from "../../assets/ikon.svg"
-import ellipse from "../../assets/ellipse.svg"
-import frame1 from "../../assets/frame1.svg"
+import styles from "./Homepage.module.css";
+import Ikon from "../../assets/ikon.svg";
+import ellipse from "../../assets/ellipse.svg";
+import frame1 from "../../assets/frame1.svg";
 import SocialIcons from "../../reusables/Socialicons/SocialIcons";
 import Container from "../../reusables/Container/Container";
 import { Link } from "react-router-dom";

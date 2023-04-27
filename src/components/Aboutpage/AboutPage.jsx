@@ -1,5 +1,6 @@
 import Button from '../../reusables/Button/Button';
-import Ikon from '../../assets/ikon.svg';
+import Ikon1 from "../../assets/ikon2.svg";
+import Ikon2 from "../../assets/ikon1.svg";
 import styles from './aboutpage.module.css';
 import Container from '../../reusables/Container/Container';
 import { RiInformationFill } from 'react-icons/ri';
@@ -20,7 +21,7 @@ function AboutPage() {
       <div className={`flex animate box_shadow  ${styles.about_content}`}>
         <div className={`flex ${styles.about_header}`}>
           <div className={`flex ${styles.img_container}`}>
-            <img src={Ikon} alt="Usirusen Ikon" className={`${styles.img}`} />
+            <img src={Ikon1} alt="Usirusen Ikon" className={`${styles.img}`} />
           </div>
           <div>
             <h3>Usirusen Ikon</h3>
