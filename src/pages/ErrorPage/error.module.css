@@ -4,7 +4,8 @@
 }
 
 .img {
-  width: 30rem;
+  width: 100%;
+  max-width: 50rem;
   z-index: 1;
   position: absolute;
   bottom: 0;
@@ -21,6 +22,5 @@
   z-index: 50;
   position: absolute;
   bottom: 0;
-  border: 1px solid;
   background-color: #282929dc;
 }
