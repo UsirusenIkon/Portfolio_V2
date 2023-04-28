@@ -1,7 +1,7 @@
 import HomePage from '../../components/Homepage/HomePage';
 import AboutPage from '../../components/Aboutpage/AboutPage';
 import SkillsPage from '../../components/Skillspage/SkillsPage';
-import ProjectsPage from '../../components/ProjectPage/ProjectsPage/ProjectsIndex';
+import ProjectsIndex from '../../components/ProjectPage/ProjectsIndex/ProjectsIndex';
 import ContactPage from '../../components/ContactPage/ContactPage';
 
 function Home() {
@@ -10,7 +10,7 @@ function Home() {
       <HomePage />
       <AboutPage />
       <SkillsPage />
-      <ProjectsPage />
+      <ProjectsIndex />
       <ContactPage />
     </>
   )
