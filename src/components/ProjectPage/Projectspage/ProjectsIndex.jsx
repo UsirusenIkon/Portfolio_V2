@@ -4,7 +4,7 @@ import Button from '../../../reusables/Button/Button';
 import styles from './projects.module.css';
 import Container from '../../../reusables/Container/Container';
 
-function ProjectsPage() {
+function ProjectsIndex() {
   return (
     <Container id="projects" className={`flex ${styles.projects_container}`}>
       <div className={`heading`}>
@@ -40,4 +40,4 @@ function ProjectsPage() {
   );
 }
 
-export default ProjectsPage;
+export default ProjectsIndex;
