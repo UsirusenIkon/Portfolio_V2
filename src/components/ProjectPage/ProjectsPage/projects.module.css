@@ -1,6 +1,6 @@
 /* stylelint-disable csstree/validator */
 h4 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .projects_content {
@@ -10,23 +10,23 @@ h4 {
   align-items: center;
   flex-direction: column;
   border-radius: 10px;
-  font-size: clamp(0.3rem, 7vw, 1.4rem);
+  font-size: clamp(0.3rem, 5vw, 1.4rem);
 }
 
 .works {
-  padding: 1rem;
-  height: 15rem;
+  padding: 4rem 1rem;
+  height: 22rem;
   width: 100%;
   flex-direction: column;
   justify-content: space-between;
-  background-color: var(--primary-color);
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
+  background-color: var(--secondary-color);
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
 }
 
 .articles {
-  padding: 1rem;
-  height: 15rem;
+  padding: 4rem 1rem;
+  height: 22rem;
   width: 100%;
   flex-direction: column;
   justify-content: space-between;
@@ -37,7 +37,7 @@ h4 {
 }
 
 .btn {
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   color: var(--accent-color);
 }
 
@@ -54,22 +54,20 @@ h4 {
   }
 
   .works {
-    padding: 2rem 1rem;
-    height: 19rem;
+    padding: 3rem 1rem;
     flex-direction: column;
     justify-content: space-between;
     border-top-right-radius: 0;
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
   }
 
   .articles {
-    padding: 2rem 1rem;
-    height: 19rem;
+    padding: 3rem 1rem;
     flex-direction: column;
     justify-content: space-between;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
     border-bottom-left-radius: 0;
   }
 }

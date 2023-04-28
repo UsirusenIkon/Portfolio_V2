@@ -7,7 +7,7 @@ function Frameworks() {
       <h3>Frameworks</h3>
       <div className="flex icons-container">
         {libraries.map((l) => (
-          <li className="flex icon-container" key={l.id}>
+          <li className="flex icon-container frame" key={l.id}>
             <div className="flex backdrop">
               <img className="icon" src={l.icon} alt={l.name} />
             </div>

@@ -2,7 +2,7 @@
 
 .about_content {
   flex-direction: column;
-  border-radius: 1rem;
+  border-radius: 8px;
   max-width: 61.9rem;
   padding: 1rem;
   gap: 1rem;
@@ -16,16 +16,17 @@
 }
 
 h3 {
-  font-size: clamp(1rem, 7vw, 1.5rem);
+  font-size: clamp(1rem, 5vw, 1.5rem);
   margin-bottom: 0.5rem;
 }
 
 .bio {
-  font-size: clamp(3px, 7vw, 1rem);
+  font-size: clamp(3px, 5vw, 1rem);
 }
 
 .bio_content {
-  font-size: clamp(3px, 7vw, 1.1rem);
+  font-size: clamp(11px, 5vw, 1.5rem);
+  text-align: justify;
 }
 
 .img_container {
@@ -51,6 +52,11 @@ h3 {
     font-size: small;
     align-items: flex-start;
     height: 5rem;
+  }
+
+  .about_content {
+    padding: 1rem 1.5rem;
+    gap: 2rem;
   }
 
   .img_container {

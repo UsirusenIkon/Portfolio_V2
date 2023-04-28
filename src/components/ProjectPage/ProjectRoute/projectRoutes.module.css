@@ -13,7 +13,7 @@
 .project_cards {
   flex-direction: column;
   width: 100%;
-  border-radius: 1rem;
+  border-radius: 8px;
 }
 
 .project_content {
@@ -23,14 +23,14 @@
   flex-direction: column;
   padding: 0.2rem 0.5rem 0.5rem 0.5rem;
   width: 100%;
-  border-bottom-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 .img {
   width: 100%;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 .project_details {

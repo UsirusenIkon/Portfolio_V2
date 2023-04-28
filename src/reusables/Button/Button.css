@@ -5,7 +5,7 @@
   font-weight: 700;
   padding: 0.5em;
   transition: all 0.4s ease-in-out;
-  border-radius: 5px;
+  border-radius: 4px;
   background-color: var(--accent-color);
   color: var(--primary-color);
   cursor: pointer;

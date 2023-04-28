@@ -79,7 +79,7 @@
   --x-width: calc(var(--hamburger-height) * 1.41421356237);
 
   z-index: 700;
-  border-radius: 5px;
+  border-radius: 4px;
   position: fixed;
   top: 1.07rem;
   right: 1rem;
@@ -106,7 +106,7 @@
   width: var(--bar-width);
   height: var(--bar-height);
   background-color: var(--accent-color);
-  border-radius: 3rem;
+  border-radius: 4px;
   transform-origin: left center;
   transition: opacity var(--animation-timing), width var(--animation-timing), rotate var(--animation-timing), translate var(--animation-timing), background-color var(--animation-timing);
   display: block;
@@ -170,7 +170,7 @@
   position: relative;
   right: 13.5rem;
   padding: 0.2rem;
-  border-radius: 5px;
+  border-radius: 4px;
   color: var(--tetiary-color);
   background-color: var(--accent-color);
 }

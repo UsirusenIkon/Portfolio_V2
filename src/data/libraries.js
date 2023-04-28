@@ -22,7 +22,7 @@ const libraries = [
   {
     id: 3,
     icon: rails,
-    name: 'Ruby on Rails'
+    name: 'Rails'
   },
 ]
 

@@ -31,7 +31,7 @@
   flex-direction: column;
   padding: 1rem;
   width: 100%;
-  border-radius: 1rem;
+  border-radius: 4px;
 }
 
 .dott {
@@ -44,7 +44,7 @@
 
 .img {
   width: 100%;
-  border-radius: 1rem;
+  border-radius: 4px;
 }
 
 .project_details {
@@ -60,7 +60,7 @@
   top: 20rem;
   position: absolute;
   background-color: var(--tetiary-color);
-  border-radius: 50%;
+  border-radius: 40%;
   filter: drop-shadow(1px 1px 1px var(--accent-color));
 }
 

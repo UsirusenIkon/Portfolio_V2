@@ -27,7 +27,7 @@
   font-size: 1.3rem;
   align-items: center;
   justify-content: center;
-  border-radius: 5px;
+  border-radius: 4px;
   background-color: var(--tetiary-color);
   padding: 0.3rem;
 }
@@ -36,7 +36,7 @@
   opacity: 0.5;
   position: absolute;
   width: 3rem;
-  border-radius: 5px;
+  border-radius: 4px;
 }
 
 .logo-text {
