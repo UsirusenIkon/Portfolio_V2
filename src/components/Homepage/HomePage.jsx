@@ -1,18 +1,18 @@
+import { Link } from "react-router-dom";
 import Button from "../../reusables/Button/Button";
 import styles from "./Homepage.module.css";
-import Ikon from "../../assets/Ikon.svg";
+import Ikon1 from "../../assets/Ikon.svg";
 import ellipse from "../../assets/ellipse.svg";
 import frame1 from "../../assets/frame1.svg";
 import SocialIcons from "../../reusables/Socialicons/SocialIcons";
 import Container from "../../reusables/Container/Container";
-import { Link } from "react-router-dom";
 
 function HomePage() {
   return(
     <Container id="home" className={`flex ${styles.home_container}`}>
       <div className={`flex animate ${styles.home_content}`}>
         <div className={`animate box_shadow ${styles.img_container}`}>
-          <img src={Ikon} alt="Usirusen Ikon" 
+          <img src={Ikon1} alt="Usirusen Ikon" 
           className={styles.img}
           />
         </div>
