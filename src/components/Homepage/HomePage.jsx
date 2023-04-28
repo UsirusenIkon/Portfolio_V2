@@ -1,6 +1,6 @@
 import Button from "../../reusables/Button/Button";
 import styles from "./Homepage.module.css";
-import Ikon from "../../assets/ikon.svg";
+import Ikon from "../../assets/Ikon.svg";
 import ellipse from "../../assets/ellipse.svg";
 import frame1 from "../../assets/frame1.svg";
 import SocialIcons from "../../reusables/Socialicons/SocialIcons";
