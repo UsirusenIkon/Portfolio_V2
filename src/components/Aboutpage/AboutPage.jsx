@@ -36,7 +36,7 @@ function AboutPage() {
             school that uses pair-programming and real-world projects to teach
             web development. I am enthusiastic about my work and, possess good
             communication skills, problem-solving ability, and teamwork. I
-            endeavor to make things easily accessible for customers on with my
+            endeavor to make things easily accessible for customers with my
             front-end designs.
           </p>
         </div>
