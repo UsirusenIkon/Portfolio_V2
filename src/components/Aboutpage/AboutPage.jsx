@@ -29,26 +29,27 @@ function AboutPage() {
             </p>
           </div>
         </div>
-        <div>
-          <p className={`${styles.bio_content}`}>
-            Hello! I’m Usirusen, I'm a full-stack web developer student
-            currently enrolled in Microverse, a remote software development
-            school that uses pair-programming and real-world projects to teach
-            web development. I am enthusiastic about my work and, possess good
-            communication skills, problem-solving ability, and teamwork. I
-            endeavor to make things easily accessible for customers with my
-            front-end designs.
-          </p>
+        <div className={`flex ${styles.bio_wrap}`}>
+            <p className={`${styles.bio_content}`}>
+              Hello! I’m Usirusen, I'm a full-stack web developer student
+              currently enrolled in Microverse, a remote software development
+              school that uses pair-programming and real-world projects to teach
+              web development. I am enthusiastic about my work and, possess good
+              communication skills, problem-solving ability, and teamwork. I
+              endeavor to make things easily accessible for customers with my
+              front-end designs.
+            </p>
+          <Link
+            to="https://docs.google.com/document/d/1v05wO-apOnyEmDoY2I8CWOXWURp9PYSm-RKRu_9P_Gk/edit?usp=sharing"
+            target="_blank"
+          >
+            <Button
+              type="button"
+              text="Get My Resume"
+              className={`${styles.cv_btn}`}
+            />
+          </Link>
         </div>
-        <Link to="https://docs.google.com/document/d/1v05wO-apOnyEmDoY2I8CWOXWURp9PYSm-RKRu_9P_Gk/edit?usp=sharing"
-        target='_blank'
-        >
-          <Button
-            type="button"
-            text="Get My Resume"
-            className={`${styles.cv_btn}`}
-          />
-        </Link>
       </div>
     </Container>
   );

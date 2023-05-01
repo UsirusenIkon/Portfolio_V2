@@ -11,24 +11,32 @@
   --img-color: #534a49;
   --filter-navicons-color: #392424;
   --cards-color: #f9ebd9;
+  --cards-2-color: #f7e6cf;
   --border-color: #30262557;
   --gradient-color: #baa5a5;
+  --article-color: #302625;
   --shadow-color: #39242435;
+  --accent-1-color: #302625;
+  --icons-hover-color: unset;
 }
 
 body.dark {
   --primary-color: #575859;
   --secondary-color: #2c2e2f;
   --tetiary-color: #353738;
-  --accent-color: #d7d7d7bd;
+  --accent-color: #d7d7d7d8;
   --ellipse-color: #232525;
   --filter-icons-color: #575859;
   --img-color: #2c2e2f;
   --filter-navicons-color: #303030;
   --cards-color: #d7d7d7ba;
+  --cards-2-color: #ececec;
   --border-color: #d7d7d74d;
   --gradient-color: #303030;
+  --article-color: #575859;
   --shadow-color: #282929;
+  --accent-1-color: #ececec;
+  --icons-hover-color: #ececec;
 }
 
 * {
@@ -73,14 +81,22 @@ a {
 }
 
 .animate {
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .heading {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   font-size: clamp(1rem, 7vw, 1.3rem);
   text-align: center;
   position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--accent-1-color);
 }
 
 .head {

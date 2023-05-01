@@ -2,7 +2,7 @@
   flex-direction: column;
   border-radius: 8px;
   width: 100%;
-  max-width: 61.9rem;
+  max-width: 64.8rem;
   margin-bottom: 1rem;
 }
 
@@ -25,6 +25,10 @@
 
 h5 {
   font-size: 1.2rem;
+}
+
+.info_content h5 {
+  color: var(--cards-2-color);
 }
 
 .info {
@@ -98,6 +102,7 @@ label span {
   }
 
   .form_content {
+    padding: 3rem 1rem;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 0;

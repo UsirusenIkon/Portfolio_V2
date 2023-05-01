@@ -10,4 +10,8 @@
   .components {
     flex-direction: row;
   }
+
+  .skillspage {
+    gap: 4rem;
+  }
 }

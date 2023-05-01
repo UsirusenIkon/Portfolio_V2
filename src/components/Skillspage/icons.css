@@ -34,6 +34,14 @@
   width: 100%;
 }
 
+@media (hover: hover) and (pointer: fine) {
+  .icon-container:hover {
+    color: var(--icons-hover-color);
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+  }
+}
+
 @media screen and (min-width: 580px) {
   .icons-backdrop {
     flex-direction: row;
@@ -56,6 +64,7 @@
   }
 
   .icons-container {
+    padding-top: 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -63,7 +72,7 @@
   .icons-backdrop {
     justify-content: unset;
     flex-direction: column;
-    max-width: 20rem;
-    height: 16.6rem;
+    max-width: 20.7rem;
+    height: 18.6rem;
   }
 }

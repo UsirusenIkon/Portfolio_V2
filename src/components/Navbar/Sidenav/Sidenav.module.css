@@ -171,8 +171,8 @@
   right: 13.5rem;
   padding: 0.2rem;
   border-radius: 4px;
-  color: var(--tetiary-color);
-  background-color: var(--accent-color);
+  color: var(--cards-2-color);
+  background-color: var(--filter-icons-color);
 }
 
 .hide {

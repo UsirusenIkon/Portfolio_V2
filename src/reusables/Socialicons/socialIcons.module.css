@@ -7,8 +7,10 @@
   padding: 4px;
 }
 
-@media screen and (min-width: 768px) {
+@media (hover: hover) and (pointer: fine) {
   .icon_img:hover {
+    color: var(--icons-hover-color);
     transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
   }
 }

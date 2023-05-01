@@ -5,7 +5,7 @@ h4 {
 
 .projects_content {
   width: 100%;
-  max-width: 61.9rem;
+  max-width: 64.8rem;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -36,14 +36,13 @@ h4 {
   border-bottom-left-radius: 10px;
 }
 
-.btn {
-  background-color: var(--secondary-color);
-  color: var(--accent-color);
+.articles h4 {
+  color: var(--cards-2-color);
 }
 
-.btn_1 {
-  background-color: var(--ellipse-color);
-  color: var(--cards-color);
+.btn {
+  background-color: var(--cards-2-color);
+  color: var(--article-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -54,7 +53,8 @@ h4 {
   }
 
   .works {
-    padding: 3rem 1rem;
+    padding: 4rem 2rem;
+    height: 27rem;
     flex-direction: column;
     justify-content: space-between;
     border-top-right-radius: 0;
@@ -63,7 +63,8 @@ h4 {
   }
 
   .articles {
-    padding: 3rem 1rem;
+    padding: 4rem 2rem;
+    height: 27rem;
     flex-direction: column;
     justify-content: space-between;
     border-top-right-radius: 8px;
