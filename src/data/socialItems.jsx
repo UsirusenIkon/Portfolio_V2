@@ -30,7 +30,7 @@ const socialItems = [
   {
     id: 4,
     icon: <FaLinkedinIn />,
-    link: 'https://www.linkedin.com/in/usirusen-ikon/',
+    link: 'https://www.linkedin.com/in/ikon-usirusen/',
     name: 'linkedIn',
   },
 ]
